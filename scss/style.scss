@@ -24,7 +24,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.9.9
+Version: 1.9.95
 License: GNU General Public License
 License URI: license.txt
 Tags:
@@ -219,7 +219,7 @@ footer {
 	color:$mainGrey;
 }
 .entypoPriceCancel { color:$mainGrey; }
-.entypoPriceCheck { color:$mainGreen; }
+.entypoPriceCheck { color:$mainGreen; font-weight: bold; }
 
 
 /* =Asides
@@ -410,7 +410,7 @@ input, textarea, select, .input-block input {
 	display: block;
 }
 .features-list .header { background:none !important; border:none;}
-.features-list { text-align: left; font-size:.9em; min-width:20% !important; }
+
 .header { padding: 15px 20px 20px; }
 
 .pricing-table .features li {
@@ -737,7 +737,10 @@ nav ul li a {  }
 .column { width:25%; }
 .pricing-table .featured { border-left:1px solid $lightGrey; border-right:1px solid $lightGrey; }
 
-
+.features-list { text-align: left; font-size:.9em; min-width:20% !important; line-height:1.5em; }
+.features-list li {
+	padding-right:0 !important;
+}
 
 
 
@@ -809,7 +812,7 @@ nav { font-size: .9em; line-height:2em; }
 /*	Pricing Tables > Tooltip
 /* -------------------------------------------------- */
 
-
+/*-------------------
 
 
 .pricing-table .features li[data-tooltip] { cursor: help; }
@@ -818,7 +821,7 @@ nav { font-size: .9em; line-height:2em; }
 
 .pricing-table .features li[data-tooltip]:hover { color: #54555a; }
 
-/* Tooltip container */
+/* Tooltip container ----------------------------------------------------------------------------------
 .pricing-table .features li[data-tooltip]:before {
 	background: $mainGrey;
 	border: 1px solid #fee5a2;
@@ -855,7 +858,7 @@ nav { font-size: .9em; line-height:2em; }
 	opacity: 1;
 }
 
-/* Tooltip arrow **********************************************************************************Testing*/
+ Tooltip arrow **********************************************************************************Testing
 .pricing-table .features li[data-tooltip]:after {
 	background: $mainGrey;
 	border-bottom: 1px solid #fee5a2;
@@ -902,7 +905,7 @@ nav { font-size: .9em; line-height:2em; }
 .pricing-table .features li[data-tooltip]:hover:before { display: block; }
 
 
-
+*/
 
 
 

@@ -16,7 +16,6 @@
 			<li data-tooltip="Tooltip - Optional description can go here!">User Creation</li>
 			<li data-tooltip="Tooltip - Optional description can go here!">Phone/Chat Support</li>
 			<li data-tooltip="Tooltip - Optional description can go here!">Development Hours</li>
-			<li data-tooltip="Tooltip - Optional description can go here!">30 day trial</li>
 		</ul><!-- end .features -->
 	</div><!-- end .column -->
 
@@ -27,43 +26,44 @@
 		</div><!-- end .header -->
 		<ul class="features">
 			<li data-feature="Backup &amp; Update Frequency">Monthly</li>
-			<li data-feature="Voters &amp; votes">unlimited</li>
-			<li data-feature="Ideas">unlimited</li>
-			<li data-feature="Comments">
-				<span class="entypo-cancel entypoPriceCancel"></span>
-			</li>
-			<li data-feature="Moderation tools">
+			<li data-feature="WordPress Core Updates">
 				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Sign-in/singup options">
+			<li data-feature="Theme &amp; Plugin Updates">
 				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Widget tracking">
+			<li data-feature="Stored Backups">
+				<span class="entypo-minus entypoPriceCancel"></span>
+			</li>
+			<li data-feature="Media File Backups">
+				<span class="entypo-minus entypoPriceCancel"></span>
+			</li>
+			<li data-feature="Security Scan &amp; Monitoring">
 				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Admins / moderators">
-				<span class="entypo-cancel entypoPriceCancel"></span>
-			</li>
-			<li data-feature="Feedback zones">
-				<span class="entypo-cancel entypoPriceCancel"></span>
-			</li>
-			<li data-feature="Products">
-				<span class="entypo-cancel entypoPriceCancel"></span>
-			</li>
-			<li data-feature="Private forums">
+			<li data-feature="Database Optimization">
 				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Semi-private forums">
+			<li data-feature="SPAM/Post Revision Cleanup">
 				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Public forums">
-				<span class="entypo-cancel entypoPriceCancel"></span>
-			</li>
-			<li data-feature="Domain aliasing">
-				<span class="entypo-cancel entypoPriceCancel"></span>
-			</li>
-			<li data-feature="30 day trial">
+			<li data-feature="WordPress Video Training">
 				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="Plugin Installs">
+				<span class="entypo-minus entypoPriceCancel"></span>
+			</li>
+			<li data-feature="E-mail Support">
+				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="User Creation">
+				<span class="entypo-minus entypoPriceCancel"></span>
+			</li>
+			<li data-feature="Phone/Chat Support">
+				<span class="entypo-minus entypoPriceCancel"></span>
+			</li>
+			<li data-feature="Development Hours">
+				<span class="entypo-minus entypoPriceCancel"></span>
 			</li>
 		</ul><!-- end .features -->
 		<div class="footer">
@@ -78,37 +78,44 @@
 		</div><!-- end .header -->
 		<ul class="features">
 			<li data-feature="Backup &amp; Update Frequency">Monthly</li>
-			<li data-feature="Voters &amp; votes">unlimited</li>
-			<li data-feature="Ideas">unlimited</li>
-			<li data-feature="Comments">
-				<span class="check">&check;</span>
+			<li data-feature="WordPress Core Updates">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Moderation tools">
-				<span class="check">&check;</span>
+			<li data-feature="Theme &amp; Plugin Updates">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Sign-in / singup options">
-				<span class="check">&check;</span>
+			<li data-feature="Stored Backups">
+				<span class="check">1</span>
 			</li>
-			<li data-feature="Widget tracking">
-				<span class="check">&check;</span>
+			<li data-feature="Media File Backups">
+				<span class="entypo-minus entypoPriceCancel"></span>
 			</li>
-			<li data-feature="Admins / moderators">unlimited</li>
-			<li data-feature="Feedback zones">unlimited</li>
-			<li data-feature="Products">unlimited</li>
-			<li data-feature="Private forums">
-				<span class="check">&check;</span>
+			<li data-feature="Security Scan &amp; Monitoring">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Semi-private forums">
-				<span class="check">&check;</span>
+			<li data-feature="Database Optimization">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Public forums">
-				<span class="check">&check;</span>
+			<li data-feature="SPAM/Post Revision Cleanup">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Domain aliasing">
-				<span class="check">&check;</span>
+			<li data-feature="WordPress Video Training">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="30 day trial">
-				<span class="check">&check;</span>
+			<li data-feature="Plugin Installs">
+				<span class="entypo-minus entypoPriceCancel"></span>
+			</li>
+			<li data-feature="E-mail Support">
+				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="User Creation">
+				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="Phone/Chat Support">
+				<span class="entypo-minus entypoPriceCancel"></span>
+			</li>
+			<li data-feature="Development Hours">
+				<span class="entypo-minus entypoPriceCancel"></span>
 			</li>
 		</ul><!-- end .features -->
 		<div class="footer">
@@ -123,37 +130,44 @@
 		</div><!-- end .header -->
 		<ul class="features">
 			<li data-feature="Backup &amp; Update Frequency">Weekly</li>
-			<li data-feature="Voters &amp; votes">unlimited</li>
-			<li data-feature="Ideas">unlimited</li>
-			<li data-feature="Comments">
-				<span class="check">&check;</span>
+			<li data-feature="WordPress Core Updates">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Moderation tools">
-				<span class="check">&check;</span>
+			<li data-feature="Theme &amp; Plugin Updates">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Sign-in / singup options">
-				<span class="check">&check;</span>
+			<li data-feature="Stored Backups">
+				<span class="check">2</span>
 			</li>
-			<li data-feature="Widget tracking">
-				<span class="check">&check;</span>
+			<li data-feature="Media File Backups">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Admins / moderators">unlimited</li>
-			<li data-feature="Feedback zones">unlimited</li>
-			<li data-feature="Products">unlimited</li>
-			<li data-feature="Private forums">
-				<span class="check">&check;</span>
+			<li data-feature="Security Scan &amp; Monitoring">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Semi-private forums">
-				<span class="check">&check;</span>
+			<li data-feature="Database Optimization">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Public forums">
-				<span class="check">&check;</span>
+			<li data-feature="SPAM/Post Revision Cleanup">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Domain aliasing">
-				<span class="check">&check;</span>
+			<li data-feature="WordPress Video Training">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="30 day trial">
-				<span class="check">&check;</span>
+			<li data-feature="Plugin Installs">
+				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="E-mail Support">
+				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="User Creation">
+				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="Phone/Chat Support">
+				<span class="entypo-minus entypoPriceCancel"></span>
+			</li>
+			<li data-feature="Development Hours">
+				<span class="check">1</span>
 			</li>
 		</ul><!-- end .features -->
 		<div class="footer">
@@ -168,37 +182,44 @@
 		</div><!-- end .header -->
 		<ul class="features">
 			<li data-feature="Backup &amp; Update Frequency">Daily</li>
-			<li data-feature="Voters &amp; votes">unlimited</li>
-			<li data-feature="Ideas">unlimited</li>
-			<li data-feature="Comments">
-				<span class="check">&check;</span>
+			<li data-feature="WordPress Core Updates">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Moderation tools">
-				<span class="check">&check;</span>
+			<li data-feature="Theme &amp; Plugin Updates">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Sign-in / singup options">
-				<span class="check">&check;</span>
+			<li data-feature="Stored Backups">
+				<span class="check">5</span>
 			</li>
-			<li data-feature="Widget tracking">
-				<span class="check">&check;</span>
+			<li data-feature="Media File Backups">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Admins / moderators">unlimited</li>
-			<li data-feature="Feedback zones">unlimited</li>
-			<li data-feature="Products">unlimited</li>
-			<li data-feature="Private forums">
-				<span class="check">&check;</span>
+			<li data-feature="Security Scan &amp; Monitoring">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Semi-private forums">
-				<span class="check">&check;</span>
+			<li data-feature="Database Optimization">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Public forums">
-				<span class="check">&check;</span>
+			<li data-feature="SPAM/Post Revision Cleanup">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="Domain aliasing">
-				<span class="check">&check;</span>
+			<li data-feature="WordPress Video Training">
+				<span class="entypo-check entypoPriceCheck"></span>
 			</li>
-			<li data-feature="30 day trial">
-				<span class="check">&check;</span>
+			<li data-feature="Plugin Installs">
+				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="E-mail Support">
+				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="User Creation">
+				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="Phone/Chat Support">
+				<span class="entypo-check entypoPriceCheck"></span>
+			</li>
+			<li data-feature="Development Hours">
+				<span class="check">2</span>
 			</li>
 		</ul><!-- end .features -->
 		<div class="footer">
