@@ -20,7 +20,7 @@ get_header(); ?>
 				<section class="" id="">
 
 					<div class="clearfix" id="">
-						<h3>Pricing Information and content below</h3>
+						<h2><?php the_title(); ?></h2>
 						<?php the_content(); ?>
 					</div><!-- End -->
 

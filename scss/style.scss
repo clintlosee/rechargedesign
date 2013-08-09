@@ -114,9 +114,11 @@ footer {
 	width:115%;
 	background:#222;
 	color:#eee;
-	padding:10px;
+	padding:8px 8px 8px 0;
 	background: $mainGrey;
 	overflow:hidden;
+	text-transform: uppercase;
+	text-align: center;
 }
 .main-small-navigation ul {
 	list-style-type: none;
@@ -218,6 +220,7 @@ footer {
 	line-height: 1.2em;
 	color:$mainGrey;
 }
+.entypoMenu { font-size: 1.2em; }
 .entypoPriceCancel { color:$mainGrey; }
 .entypoPriceCheck { color:$mainGreen; font-weight: bold; }
 

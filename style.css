@@ -762,19 +762,21 @@ footer {
   width: 115%;
   background: #222;
   color: #eee;
-  padding: 10px;
+  padding: 8px 8px 8px 0;
   background: #313131;
   overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-/* line 121, scss/style.scss */
+/* line 123, scss/style.scss */
 .main-small-navigation ul {
   list-style-type: none;
   width: 100%;
   background: #313131;
 }
 
-/* line 126, scss/style.scss */
+/* line 128, scss/style.scss */
 .main-small-navigation ul li {
   border-top: 1px solid #444;
   text-align: left;
@@ -786,130 +788,135 @@ footer {
   text-transform: uppercase;
 }
 
-/* line 136, scss/style.scss */
+/* line 138, scss/style.scss */
 .main-small-navigation ul li a {
   color: #eee;
   text-decoration: none;
 }
 
-/* line 140, scss/style.scss */
+/* line 142, scss/style.scss */
 .main-small-navigation ul li a:hover {
   color: #bbb;
 }
 
-/* line 143, scss/style.scss */
+/* line 145, scss/style.scss */
 .main-small-navigation ul ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 147, scss/style.scss */
+/* line 149, scss/style.scss */
 .main-small-navigation ul ul li {
   padding: 0 15px;
   margin: 0;
   font-size: .9em;
 }
 
-/* line 153, scss/style.scss */
+/* line 155, scss/style.scss */
 .navigation-main ul, .main-small-navigation small {
   display: none;
 }
 
 /* =Content
 ----------------------------------------------- */
-/* line 163, scss/style.scss */
+/* line 165, scss/style.scss */
 .hentry {
   margin: 0 0 1.5em;
 }
 
-/* line 166, scss/style.scss */
+/* line 168, scss/style.scss */
 .byline {
   display: none;
 }
 
-/* line 170, scss/style.scss */
+/* line 172, scss/style.scss */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
-/* line 174, scss/style.scss */
+/* line 176, scss/style.scss */
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
-/* line 177, scss/style.scss */
+/* line 179, scss/style.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
-/* line 182, scss/style.scss */
+/* line 184, scss/style.scss */
 #service-box, #work-box {
   /*border: 1px solid #222;*/
 }
 
-/* line 185, scss/style.scss */
+/* line 187, scss/style.scss */
 #work-box {
   border: 1px solid #222;
 }
 
-/* line 188, scss/style.scss */
+/* line 190, scss/style.scss */
 #service-box ul, #work-box ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 191, scss/style.scss */
+/* line 193, scss/style.scss */
 #service-box ul li, #work-box ul li {
   border: none;
   list-style-type: none;
   margin: 20px 0;
 }
 
-/* line 196, scss/style.scss */
+/* line 198, scss/style.scss */
 #service-box h3 {
   text-align: center;
   color: #69bd45 !important;
 }
 
-/* line 200, scss/style.scss */
+/* line 202, scss/style.scss */
 #service-box h3 a span:hover {
   color: #69bd45;
 }
 
-/* line 202, scss/style.scss */
+/* line 204, scss/style.scss */
 #contact {
   padding: 20px 0;
   font-size: .8em;
 }
 
-/* line 206, scss/style.scss */
+/* line 208, scss/style.scss */
 #contact h3 {
   font-weight: bold;
   padding: 10px 0;
 }
 
 /* entypo */
-/* line 213, scss/style.scss */
+/* line 215, scss/style.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
-/* line 216, scss/style.scss */
+/* line 218, scss/style.scss */
 .entypoFront {
   font-size: 5em;
   line-height: 1.2em;
   color: #313131;
 }
 
-/* line 221, scss/style.scss */
+/* line 223, scss/style.scss */
+.entypoMenu {
+  font-size: 1.2em;
+}
+
+/* line 224, scss/style.scss */
 .entypoPriceCancel {
   color: #313131;
 }
 
-/* line 222, scss/style.scss */
+/* line 225, scss/style.scss */
 .entypoPriceCheck {
   color: #69bd45;
   font-weight: bold;
@@ -917,7 +924,7 @@ footer {
 
 /* =Asides
 ----------------------------------------------- */
-/* line 229, scss/style.scss */
+/* line 232, scss/style.scss */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -925,7 +932,7 @@ footer {
 
 /* =Media
 ----------------------------------------------- */
-/* line 238, scss/style.scss */
+/* line 241, scss/style.scss */
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
   border: none;
@@ -934,49 +941,49 @@ footer {
   padding: 0;
 }
 
-/* line 244, scss/style.scss */
+/* line 247, scss/style.scss */
 .wp-caption {
   border: 1px solid #ccc;
   margin-bottom: 1.5em;
   max-width: 100%;
 }
 
-/* line 249, scss/style.scss */
+/* line 252, scss/style.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin: 1.2% auto 0;
   max-width: 98%;
 }
 
-/* line 254, scss/style.scss */
+/* line 257, scss/style.scss */
 .wp-caption-text {
   text-align: center;
 }
 
-/* line 257, scss/style.scss */
+/* line 260, scss/style.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-/* line 260, scss/style.scss */
+/* line 263, scss/style.scss */
 .site-content .gallery {
   margin-bottom: 1.5em;
 }
 
-/* line 265, scss/style.scss */
+/* line 268, scss/style.scss */
 .site-content .gallery a img {
   border: none;
   height: auto;
   max-width: 90%;
 }
 
-/* line 270, scss/style.scss */
+/* line 273, scss/style.scss */
 .site-content .gallery dd {
   margin: 0;
 }
 
 /* Make sure embeds and iframes fit their containers */
-/* line 281, scss/style.scss */
+/* line 284, scss/style.scss */
 embed,
 iframe,
 object {
@@ -985,19 +992,19 @@ object {
 
 /* =Navigation
 ----------------------------------------------- */
-/* line 289, scss/style.scss */
+/* line 292, scss/style.scss */
 .site-content [class*="navigation"] {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
 
-/* line 293, scss/style.scss */
+/* line 296, scss/style.scss */
 [class*="navigation"] .previous {
   float: left;
   width: 50%;
 }
 
-/* line 297, scss/style.scss */
+/* line 300, scss/style.scss */
 [class*="navigation"] .next {
   float: right;
   text-align: right;
@@ -1006,26 +1013,26 @@ object {
 
 /* =Comments
 ----------------------------------------------- */
-/* line 306, scss/style.scss */
+/* line 309, scss/style.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
 /* =Widgets
 ----------------------------------------------- */
-/* line 315, scss/style.scss */
+/* line 318, scss/style.scss */
 .widget {
   margin: 0 0 1.5em;
 }
 
 /* Make sure select elements fit in widgets */
-/* line 320, scss/style.scss */
+/* line 323, scss/style.scss */
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget */
-/* line 325, scss/style.scss */
+/* line 328, scss/style.scss */
 .widget_search .submit {
   display: none;
 }
@@ -1033,7 +1040,7 @@ object {
 /* =Infinite Scroll
 ----------------------------------------------- */
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-/* line 334, scss/style.scss */
+/* line 337, scss/style.scss */
 .infinite-scroll .navigation-paging,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -1041,7 +1048,7 @@ object {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-/* line 339, scss/style.scss */
+/* line 342, scss/style.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
@@ -1049,28 +1056,28 @@ object {
 /* -------------------------------------------------- */
 /*	Contact Us
 /* -------------------------------------------------- */
-/* line 346, scss/style.scss */
+/* line 349, scss/style.scss */
 .wpcf7-form .input-block, #commentform .input-block {
   margin: 0 0 20px 0;
 }
 
-/* line 350, scss/style.scss */
+/* line 353, scss/style.scss */
 .wpcf7-form input, #commentform input,
 .wpcf7-form textarea, #commentform textarea {
   width: 278px;
 }
 
-/* line 352, scss/style.scss */
+/* line 355, scss/style.scss */
 input:hover, textarea:hover, select:hover, .input-block input:hover {
   border-color: #dedede;
 }
 
-/* line 353, scss/style.scss */
+/* line 356, scss/style.scss */
 input, select {
   height: 40px;
 }
 
-/* line 356, scss/style.scss */
+/* line 359, scss/style.scss */
 input, textarea, select, .input-block input {
   background-color: #F8F8F8;
   border: 1px solid #E8E8E8;
@@ -1084,7 +1091,7 @@ input, textarea, select, .input-block input {
 /* -------------------------------------------------- */
 /*	Pricing Tables
 /* -------------------------------------------------- */
-/* line 369, scss/style.scss */
+/* line 372, scss/style.scss */
 .pricing-table {
   height: 100%;
   margin: 20px 0;
@@ -1093,12 +1100,12 @@ input, textarea, select, .input-block input {
   width: 100%;
 }
 
-/* line 376, scss/style.scss */
+/* line 379, scss/style.scss */
 .pricing-table .features-list {
   display: none;
 }
 
-/* line 377, scss/style.scss */
+/* line 380, scss/style.scss */
 .pricing-table .features li:before {
   color: #7b7b7b;
   content: attr(data-feature) ":" !important;
@@ -1107,13 +1114,13 @@ input, textarea, select, .input-block input {
   text-align: center;
 }
 
-/* line 384, scss/style.scss */
+/* line 387, scss/style.scss */
 .pricing-table .features {
   list-style: none;
   margin: 0;
 }
 
-/* line 385, scss/style.scss */
+/* line 388, scss/style.scss */
 .pricing-table .header {
   background: #313131;
   color: #fff;
@@ -1122,7 +1129,7 @@ input, textarea, select, .input-block input {
   padding: 0;
 }
 
-/* line 392, scss/style.scss */
+/* line 395, scss/style.scss */
 .pricing-table .title {
   font-size: 1.1em;
   font-weight: 400;
@@ -1132,7 +1139,7 @@ input, textarea, select, .input-block input {
   background: #2c2c2c;
 }
 
-/* line 400, scss/style.scss */
+/* line 403, scss/style.scss */
 .pricing-table .price {
   color: #999;
   font-size: 12px;
@@ -1140,43 +1147,43 @@ input, textarea, select, .input-block input {
   padding: 7px 0 0 0;
 }
 
-/* line 406, scss/style.scss */
+/* line 409, scss/style.scss */
 .pricing-table .featured .price {
   color: #fff;
 }
 
-/* line 407, scss/style.scss */
+/* line 410, scss/style.scss */
 .pricing-table .price span {
   color: #fff;
   font-size: 30px;
   display: block;
 }
 
-/* line 412, scss/style.scss */
+/* line 415, scss/style.scss */
 .features-list .header {
   background: none !important;
   border: none;
 }
 
-/* line 414, scss/style.scss */
+/* line 417, scss/style.scss */
 .header {
   padding: 15px 20px 20px;
 }
 
-/* line 416, scss/style.scss */
+/* line 419, scss/style.scss */
 .pricing-table .features li {
   display: block;
   margin: 0;
   position: relative;
 }
 
-/* line 421, scss/style.scss */
+/* line 424, scss/style.scss */
 .pricing-table .footer {
   padding: 16px 20px;
   background: #f8f8f8;
 }
 
-/* line 422, scss/style.scss */
+/* line 425, scss/style.scss */
 .pricing-table .footer .button {
   background: #515151;
   font-size: 14px;
@@ -1185,19 +1192,19 @@ input, textarea, select, .input-block input {
   padding: 9px 21px;
 }
 
-/* line 429, scss/style.scss */
+/* line 432, scss/style.scss */
 .pricing-table .features li {
   background: #f8f8f8;
   border-bottom: 1px solid #fff;
   padding: 8px 10px;
 }
 
-/* line 434, scss/style.scss */
+/* line 437, scss/style.scss */
 .pricing-table .featured {
   margin-top: 12px;
 }
 
-/* line 435, scss/style.scss */
+/* line 438, scss/style.scss */
 .pricing-table .featured .header {
   background: #69bd45;
   padding: 0 0 23px 0;
@@ -1206,55 +1213,55 @@ input, textarea, select, .input-block input {
 }
 
 @-moz-document url-prefix() {
-  /* line 442, scss/style.scss */
+  /* line 445, scss/style.scss */
   .pricing-table .featured .header {
     padding: 0 0 21px 0;
     /* Firefox Hack */
   }
 }
 
-/* line 446, scss/style.scss */
+/* line 449, scss/style.scss */
 .pricing-table .featured .header .title {
   font-size: 1.3em;
   background: #418937;
 }
 
-/* line 447, scss/style.scss */
+/* line 450, scss/style.scss */
 .pricing-table .features li:before {
   content: '';
 }
 
-/* line 448, scss/style.scss */
+/* line 451, scss/style.scss */
 .pricing-table .featured .features li {
   background: #fff;
 }
 
-/* line 449, scss/style.scss */
+/* line 452, scss/style.scss */
 .pricing-table .features li:first-child {
   border-top: 1px solid #fff;
 }
 
-/* line 450, scss/style.scss */
+/* line 453, scss/style.scss */
 .pricing-table .features li:nth-child(even) {
   background: #f0f0f0;
 }
 
-/* line 451, scss/style.scss */
+/* line 454, scss/style.scss */
 .pricing-table .featured .features li:nth-child(even) {
   background: #f6f6f6;
 }
 
-/* line 453, scss/style.scss */
+/* line 456, scss/style.scss */
 .pricing-table .featured .footer {
   padding-bottom: 26px;
 }
 
-/* line 454, scss/style.scss */
+/* line 457, scss/style.scss */
 .pricing-table .features-list .footer {
   background: none;
 }
 
-/* line 456, scss/style.scss */
+/* line 459, scss/style.scss */
 .pricing-table .footer .button {
   color: #fff;
   -webkit-transition: background-color .2s ease;
@@ -1264,12 +1271,12 @@ input, textarea, select, .input-block input {
   transition: background-color .2s ease;
 }
 
-/* line 463, scss/style.scss */
+/* line 466, scss/style.scss */
 .pricing-table .footer .button:hover {
   background: #69bd45;
 }
 
-/* line 465, scss/style.scss */
+/* line 468, scss/style.scss */
 .pricing-table .featured .footer .button {
   background: #69bd45;
   color: #313131;
@@ -1280,7 +1287,7 @@ input, textarea, select, .input-block input {
   transition: background-color .2s ease;
 }
 
-/* line 472, scss/style.scss */
+/* line 475, scss/style.scss */
 .pricing-table .featured .footer .button:hover {
   background: #313131;
   color: #fff;
@@ -1289,40 +1296,40 @@ input, textarea, select, .input-block input {
 /*============================================================ TABLET ==========================================*/
 @media only screen and (min-width: 767px) {
   /* Tablets/netbooks (768px+) styles go here */
-  /* line 483, scss/style.scss */
+  /* line 486, scss/style.scss */
   hgroup {
     float: left;
   }
 
-  /* line 486, scss/style.scss */
+  /* line 489, scss/style.scss */
   h1#logo a {
     margin: 10px 0;
   }
 
   /* Responsive iFrame */
-  /* line 491, scss/style.scss */
+  /* line 494, scss/style.scss */
   .responsive-iframe-container {
     height: 300px;
   }
 
   /* =Menu
   ----------------------------------------------- */
-  /* line 498, scss/style.scss */
+  /* line 501, scss/style.scss */
   .menu ul {
     border: none;
   }
 
-  /* line 499, scss/style.scss */
+  /* line 502, scss/style.scss */
   .menu ul li {
     border: none;
   }
 
-  /* line 500, scss/style.scss */
+  /* line 503, scss/style.scss */
   .menu ul li a {
     color: #313131;
   }
 
-  /* line 501, scss/style.scss */
+  /* line 504, scss/style.scss */
   nav {
     line-height: 2em;
     margin: -6px auto;
@@ -1330,12 +1337,12 @@ input, textarea, select, .input-block input {
     font-weight: 400;
   }
 
-  /* line 507, scss/style.scss */
+  /* line 510, scss/style.scss */
   .navigation-main {
     display: block;
   }
 
-  /* line 510, scss/style.scss */
+  /* line 513, scss/style.scss */
   .navigation-main ul {
     display: block;
     list-style: none;
@@ -1345,13 +1352,13 @@ input, textarea, select, .input-block input {
     height: 100px;
   }
 
-  /* line 518, scss/style.scss */
+  /* line 521, scss/style.scss */
   .navigation-main ul li {
     float: left;
     height: 100%;
   }
 
-  /* line 522, scss/style.scss */
+  /* line 525, scss/style.scss */
   .navigation-main li a {
     float: left;
     color: #444;
@@ -1368,7 +1375,7 @@ input, textarea, select, .input-block input {
     transition: background 0.3s ease;
   }
 
-  /* line 538, scss/style.scss */
+  /* line 541, scss/style.scss */
   .navigation-main li.current_page_item a {
     background: #f8f8f8;
     border-top: 6px solid #69bd45;
@@ -1378,7 +1385,7 @@ input, textarea, select, .input-block input {
   }
 
   /*HOVER*/
-  /* line 546, scss/style.scss */
+  /* line 549, scss/style.scss */
   .navigation-main li a:hover {
     background: #f8f8f8;
     color: #222;
@@ -1389,13 +1396,13 @@ input, textarea, select, .input-block input {
   }
 
   /*VISITED*/
-  /* line 555, scss/style.scss */
+  /* line 558, scss/style.scss */
   .navigation-main li a:visited {
     /*color:#fff;*/
   }
 
   /* Dropdown */
-  /* line 560, scss/style.scss */
+  /* line 563, scss/style.scss */
   .navigation-main li:hover > ul {
     display: block;
     top: 127px;
@@ -1404,14 +1411,14 @@ input, textarea, select, .input-block input {
   }
 
   @-moz-document url-prefix() {
-    /* line 566, scss/style.scss */
+    /* line 569, scss/style.scss */
     .navigation-main li:hover > ul {
       top: 100px;
       /* Firefox Hack */
     }
 }
 
-  /* line 571, scss/style.scss */
+  /* line 574, scss/style.scss */
   .navigation-main ul ul {
     background: #313131;
     -webkit-box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.2);
@@ -1424,12 +1431,12 @@ input, textarea, select, .input-block input {
     z-index: 99;
   }
 
-  /* line 583, scss/style.scss */
+  /* line 586, scss/style.scss */
   .navigation-main ul ul li {
     float: none;
   }
 
-  /* line 585, scss/style.scss */
+  /* line 588, scss/style.scss */
   .navigation-main ul ul a {
     border: 0;
     border-bottom: 1px solid #252525;
@@ -1447,7 +1454,7 @@ input, textarea, select, .input-block input {
     min-width: 100%;
   }
 
-  /* line 606, scss/style.scss */
+  /* line 609, scss/style.scss */
   .navigation-main ul ul a:hover,
   .navigation-main ul ul .current_page_item > a,
   .navigation-main ul ul .current_page_parent > a,
@@ -1458,7 +1465,7 @@ input, textarea, select, .input-block input {
     padding-top: 3px !important;
   }
 
-  /* line 614, scss/style.scss */
+  /* line 617, scss/style.scss */
   .not-ie .navigation-main ul ul .current_page_item:after, .not-ie .navigation-main ul ul .current-menu-item:after,
   .not-ie .navigation-main ul ul .current_page_parent:after,
   .not-ie .navigation-main ul ul .current_page_ancestor:after, .not-ie .navigation-main ul ul .current-menu-ancestor:after {
@@ -1466,7 +1473,7 @@ input, textarea, select, .input-block input {
   }
 
   /* Sub Dropdown */
-  /* line 617, scss/style.scss */
+  /* line 620, scss/style.scss */
   .navigation-main ul ul ul {
     left: 158px !important;
     top: 46px !important;
@@ -1475,7 +1482,7 @@ input, textarea, select, .input-block input {
     line-height: 14px;
   }
 
-  /* line 625, scss/style.scss */
+  /* line 628, scss/style.scss */
   .sub-menu li a {
     border: 1px solid #222;
   }
@@ -1513,23 +1520,23 @@ input, textarea, select, .input-block input {
   }
   */
   /* Small menu */
-  /* line 666, scss/style.scss */
+  /* line 669, scss/style.scss */
   .menu-toggle {
     display: none;
     cursor: pointer;
   }
 
-  /* line 671, scss/style.scss */
+  /* line 674, scss/style.scss */
   .main-small-navigation ul {
     display: none;
   }
 
-  /* line 675, scss/style.scss */
+  /* line 678, scss/style.scss */
   .navigation-main small {
     display: none;
   }
 
-  /* line 679, scss/style.scss */
+  /* line 682, scss/style.scss */
   #service-box ul li {
     display: inline-block;
     width: 28%;
@@ -1537,19 +1544,19 @@ input, textarea, select, .input-block input {
   }
 
   /* Layout: Content-Sidebar */
-  /* line 688, scss/style.scss */
+  /* line 691, scss/style.scss */
   .content-area {
     float: left;
     margin: 0 -25% 0 0;
     width: 100%;
   }
 
-  /* line 693, scss/style.scss */
+  /* line 696, scss/style.scss */
   .site-content {
     margin: 0 25% 0 0;
   }
 
-  /* line 696, scss/style.scss */
+  /* line 699, scss/style.scss */
   .site-main .widget-area {
     float: right;
     overflow: hidden;
@@ -1559,60 +1566,60 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Contact Us
   /* -------------------------------------------------- */
-  /* line 705, scss/style.scss */
+  /* line 708, scss/style.scss */
   .wpcf7-form, #contact-info {
     margin: 0px;
   }
 
-  /* line 706, scss/style.scss */
+  /* line 709, scss/style.scss */
   .wpcf7-form, #commentform {
     max-width: 100%;
   }
 
-  /* line 707, scss/style.scss */
+  /* line 710, scss/style.scss */
   .wpcf7-form {
     margin: 0 -20px 0 0;
   }
 
-  /* line 708, scss/style.scss */
+  /* line 711, scss/style.scss */
   .wpcf7-form-control-wrap br, .wpcf7-form-control-wrap p {
     display: none;
   }
 
-  /* line 709, scss/style.scss */
+  /* line 712, scss/style.scss */
   .wpcf7-form .input-block, #commentform .input-block {
     float: left !important;
     margin: 0 15px 20px 0;
   }
 
-  /* line 713, scss/style.scss */
+  /* line 716, scss/style.scss */
   .wpcf7-form .input-block:nth-of-type(3n), #commentform .input-block:nth-of-type(3n) {
     margin-right: 0;
   }
 
-  /* line 714, scss/style.scss */
+  /* line 717, scss/style.scss */
   .wpcf7-form input {
     width: 157px;
   }
 
-  /* line 715, scss/style.scss */
+  /* line 718, scss/style.scss */
   .wpcf7-form .textarea-block, #commentform .textarea-block {
     clear: both;
   }
 
-  /* line 716, scss/style.scss */
+  /* line 719, scss/style.scss */
   .wpcf7-form textarea {
     width: 500px;
   }
 
-  /* line 717, scss/style.scss */
+  /* line 720, scss/style.scss */
   .wpcf7-not-valid-tip {
     color: #f02932;
     display: block;
     margin: 5px 0 0;
   }
 
-  /* line 723, scss/style.scss */
+  /* line 726, scss/style.scss */
   .wpcf7-form input[type="submit"], #commentform input[type="submit"],
   .wpcf7-form input[type="reset"], #commentform input[type="reset"] {
     display: block;
@@ -1620,7 +1627,7 @@ input, textarea, select, .input-block input {
     width: auto !important;
   }
 
-  /* line 728, scss/style.scss */
+  /* line 731, scss/style.scss */
   .wpcf7-response-output {
     margin: -20px 0 0;
   }
@@ -1628,28 +1635,28 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Pricing Tables
   /* -------------------------------------------------- */
-  /* line 734, scss/style.scss */
+  /* line 737, scss/style.scss */
   .pricing-table .featured .header {
     margin-top: -20px;
   }
 
-  /* line 735, scss/style.scss */
+  /* line 738, scss/style.scss */
   .pricing-table .features {
     border-left: 1px solid #fff;
   }
 
-  /* line 737, scss/style.scss */
+  /* line 740, scss/style.scss */
   .column {
     width: 25%;
   }
 
-  /* line 738, scss/style.scss */
+  /* line 741, scss/style.scss */
   .pricing-table .featured {
     border-left: 1px solid #f8f8f8;
     border-right: 1px solid #f8f8f8;
   }
 
-  /* line 740, scss/style.scss */
+  /* line 743, scss/style.scss */
   .features-list {
     text-align: left;
     font-size: .9em;
@@ -1657,7 +1664,7 @@ input, textarea, select, .input-block input {
     line-height: 1.5em;
   }
 
-  /* line 741, scss/style.scss */
+  /* line 744, scss/style.scss */
   .features-list li {
     padding-right: 0 !important;
   }
@@ -1666,36 +1673,36 @@ input, textarea, select, .input-block input {
 /*============================================================ DESKTOP ==========================================*/
 @media only screen and (min-width: 1024px) {
   /* Desktops (1024px+) styles go here */
-  /* line 760, scss/style.scss */
+  /* line 763, scss/style.scss */
   hgroup {
     background: #fff;
   }
 
-  /* line 761, scss/style.scss */
+  /* line 764, scss/style.scss */
   nav {
     font-size: .9em;
     line-height: 2em;
   }
 
   /* Responsive iFrame */
-  /* line 764, scss/style.scss */
+  /* line 767, scss/style.scss */
   .responsive-iframe-container {
     height: 400px;
   }
 
-  /* line 766, scss/style.scss */
+  /* line 769, scss/style.scss */
   .navigation-main li a {
     padding: 38px 20px 12px;
   }
 
   /*dropdown*/
-  /* line 769, scss/style.scss */
+  /* line 772, scss/style.scss */
   .navigation-main ul ul a {
     background: #444;
     font-size: .8em;
   }
 
-  /* line 774, scss/style.scss */
+  /* line 777, scss/style.scss */
   .navigation-main small {
     display: block;
     font-size: .8em;
@@ -1706,7 +1713,7 @@ input, textarea, select, .input-block input {
     font-weight: 300;
   }
 
-  /* line 784, scss/style.scss */
+  /* line 787, scss/style.scss */
   #service-box ul li {
     display: inline-block;
     width: 29%;
@@ -1715,17 +1722,17 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Contact Us
   /* -------------------------------------------------- */
-  /* line 789, scss/style.scss */
+  /* line 792, scss/style.scss */
   .wpcf7-form .input-block, #commentform .input-block {
     margin: 0 20px 20px 0;
   }
 
-  /* line 792, scss/style.scss */
+  /* line 795, scss/style.scss */
   .wpcf7-form input {
     width: 213px !important;
   }
 
-  /* line 793, scss/style.scss */
+  /* line 796, scss/style.scss */
   .wpcf7-form textarea {
     height: 150px;
     max-width: 100%;
@@ -1735,22 +1742,22 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Pricing Tables
   /* -------------------------------------------------- */
-  /* line 802, scss/style.scss */
+  /* line 805, scss/style.scss */
   .pricing-table .features-list {
     display: block;
   }
 
-  /* line 803, scss/style.scss */
+  /* line 806, scss/style.scss */
   .pricing-table .features li:before {
     display: none;
   }
 
-  /* line 804, scss/style.scss */
+  /* line 807, scss/style.scss */
   .pricing-table .features-list .features {
     border-left: none;
   }
 
-  /* line 806, scss/style.scss */
+  /* line 809, scss/style.scss */
   .column {
     width: 20%;
   }

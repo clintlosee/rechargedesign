@@ -47,7 +47,7 @@
 			</hgroup>
 
 			<nav id="site-navigation" class="navigation-main grid-70 mobile-grid-100" role="navigation">
-				<span class="menu-toggle"><?php _e( 'Menu', 'recharge_design' ); ?></span>
+				<span class="menu-toggle"><?php _e( '<span class="entypo-menu entypoMenu">&nbsp;Menu</span>', 'recharge_design' ); ?></span>
 				
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #site-navigation -->
