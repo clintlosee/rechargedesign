@@ -121,6 +121,11 @@ function recharge_design_widgets_init() {
 add_action( 'widgets_init', 'recharge_design_widgets_init' );
 
 /**
+ * Implement the Portfolio Custom Post Type
+*/
+require_once('portfolio-manager.php');
+
+/**
  * Enqueue scripts and styles
  */
 function recharge_design_scripts() {
@@ -194,3 +199,5 @@ add_action('layerslider_ready', 'my_layerslider_overrides');
  	$GLOBALS['lsPluginPath'] = get_stylesheet_directory_uri() . '/plugins/LayerSlider/';         
  	$GLOBALS['lsAutoUpdateBox'] = false;     
  }
+
+ 

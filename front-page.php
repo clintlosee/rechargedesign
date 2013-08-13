@@ -29,18 +29,14 @@ get_header(); ?>
 				
 					<div id="work-box" class="grid-100 mobile-grid-100">
 						<h2><a href="<?php echo get_permalink(  ); ?>">Portfolio</a></h2>
-							<ul class="postlist">
-								<li class="post">
-									<h2><a href="#" title="Post">Post title</a></h2>
-									<p>Posted by Me not long ago</p>
-									<p>Lorem ipsum dolor sit amet, dolor sit amet. HOME</p>
-								</li><!-- .post -->
-								<li class="post">
-									<h2><a href="#" title="Post">Older post title</a></h2>
-									<p>Posted by Me a bit longer ago</p>
-									<p>Lorem ipsum dolor sit amet, dolor sit amet.</p>
-								</li><!-- .post -->
-							</ul>
+							<?php $loop = new WP_Query( array( 'post_type' => 'portfolio', 'posts_per_page' => 10 ) ); ?>
+
+							<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+								<?php the_title( '<h2 class="entry-title"><a href="' . get_permalink() . '" title="' . the_title_attribute( 'echo=0' ) . '" rel="bookmark">', '</a></h2>' ); ?>
+
+								
+							<?php endwhile; ?>
 					</div><!-- End #work-box -->
 				</section>
 
@@ -49,7 +45,7 @@ get_header(); ?>
 
 
 
-				<?php get_template_part( 'content', 'page' ); ?>
+				<?php //get_template_part( 'content', 'page' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
