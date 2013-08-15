@@ -33,10 +33,60 @@ function create_portfolio_post_type() {
     ); 
 }
 
-if (function_exists('add_theme_support')) {
-    add_theme_support('post_thumbnails');
-    add_image_size('portfolio', 620, 270, true);
+if (function_exists('add_image_size')) {
+    add_image_size('portfolio', 610, 430, true);
+    add_image_size('portfolio-thumb', 230, 160, true);
+    add_image_size('portfolio-square', 250, 250, true);
 }
 
+add_action("admin_init", "portfolio_manager_add_meta");
+
+function portfolio_manager_add_meta() {
+    add_meta_box("portfolio-meta", "Portfolio Options", 
+        "portfolio_manager_meta_options", "portfolio",
+        "normal", "high");
+}
+
+function portfolio_manager_meta_options() {
+    global $post;
+    if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE )
+        return $post_id;
+
+    $custom = get_post_custom($post->ID);
+    $link= $custom["link"][0];
+    $desc= $custom["description"][0];
+    ?>
+
+    <style type="text/css">
+    <?php include('css/portfolio_manager.css'); ?>
+    </style>
+
+    <div class="portfolio-manager-extras">
+        
+        <?php
+            $link= ($link =="") ? "http://" : $link;
+        ?>
+
+        <div><label>Website:</label><input name="website" value="<?php echo $link; ?>" /></div>
+        <div><label>Brief Description:</label><textarea name="description" value="<?php echo $desc; ?>"></textarea></div>
+    </div>
+    <?php
+}
+
+add_action('save_post', 'portfolio_manager_save_extras');
+
+function portfolio_manager_save_extras() {
+    global $post;
+
+    if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ){
+        //don't remove
+        return $post_id;
+    }else{
+        update_post_meta($post->ID, "link",
+            $_POST["website"]);
+        update_post_meta($post->ID, "desc", 
+            $_POST["description"]);
+    }
+}
 
 ?>

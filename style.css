@@ -5,7 +5,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.9.97
+Version: 1.9.98
 License: GNU General Public License
 License URI: license.txt
 Tags:
@@ -233,7 +233,7 @@ td {
 }
 
 /* line 101, scss/base.scss */
-* {
+*, *:after, *:before {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -241,9 +241,27 @@ td {
   box-sizing: border-box;
 }
 
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 112, scss/base.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 116, scss/base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 117, scss/base.scss */
+.clearfix {
+  *zoom: 1;
+}
+
 /* =Global
 ----------------------------------------------- */
-/* line 117, scss/base.scss */
+/* line 126, scss/base.scss */
 body,
 button,
 input,
@@ -254,47 +272,47 @@ textarea {
 }
 
 /* Headings */
-/* line 122, scss/base.scss */
+/* line 131, scss/base.scss */
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   clear: both;
 }
 
-/* line 125, scss/base.scss */
+/* line 134, scss/base.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 
-/* line 126, scss/base.scss */
+/* line 135, scss/base.scss */
 h1 {
   font-size: 2.3em;
   line-height: 2.45em;
 }
 
-/* line 130, scss/base.scss */
+/* line 139, scss/base.scss */
 h2 {
   font-size: 1.8em;
   line-height: 1.9em;
 }
 
-/* line 134, scss/base.scss */
+/* line 143, scss/base.scss */
 h3 {
   font-size: 1.5em;
   line-height: 1.65em;
 }
 
-/* line 138, scss/base.scss */
+/* line 147, scss/base.scss */
 h4 {
   font-size: 1.35em;
   line-height: 1.4em;
 }
 
-/* line 142, scss/base.scss */
+/* line 151, scss/base.scss */
 h5 {
   font-size: 1.1em;
   line-height: 1.25em;
 }
 
-/* line 146, scss/base.scss */
+/* line 155, scss/base.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -303,64 +321,64 @@ hr {
 }
 
 /* Text elements */
-/* line 154, scss/base.scss */
+/* line 163, scss/base.scss */
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 157, scss/base.scss */
+/* line 166, scss/base.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
-/* line 160, scss/base.scss */
+/* line 169, scss/base.scss */
 ul {
   list-style: disc;
 }
 
-/* line 163, scss/base.scss */
+/* line 172, scss/base.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 167, scss/base.scss */
+/* line 176, scss/base.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 171, scss/base.scss */
+/* line 180, scss/base.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 174, scss/base.scss */
+/* line 183, scss/base.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 177, scss/base.scss */
+/* line 186, scss/base.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 180, scss/base.scss */
+/* line 189, scss/base.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 183, scss/base.scss */
+/* line 192, scss/base.scss */
 blockquote {
   margin: 0 1.5em;
 }
 
-/* line 186, scss/base.scss */
+/* line 195, scss/base.scss */
 address {
   margin: 0 0 1.5em;
 }
 
-/* line 189, scss/base.scss */
+/* line 198, scss/base.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -373,24 +391,24 @@ pre {
   max-width: 100%;
 }
 
-/* line 200, scss/base.scss */
+/* line 209, scss/base.scss */
 code, kbd, tt, var {
   font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
-/* line 203, scss/base.scss */
+/* line 212, scss/base.scss */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 207, scss/base.scss */
+/* line 216, scss/base.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 212, scss/base.scss */
+/* line 221, scss/base.scss */
 sup,
 sub {
   font-size: 75%;
@@ -400,43 +418,43 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 219, scss/base.scss */
+/* line 228, scss/base.scss */
 sup {
   bottom: 1ex;
 }
 
-/* line 222, scss/base.scss */
+/* line 231, scss/base.scss */
 sub {
   top: .5ex;
 }
 
-/* line 225, scss/base.scss */
+/* line 234, scss/base.scss */
 small {
   font-size: 75%;
 }
 
-/* line 228, scss/base.scss */
+/* line 237, scss/base.scss */
 big {
   font-size: 125%;
 }
 
-/* line 231, scss/base.scss */
+/* line 240, scss/base.scss */
 figure {
   margin: 0;
 }
 
-/* line 234, scss/base.scss */
+/* line 243, scss/base.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
 
-/* line 238, scss/base.scss */
+/* line 247, scss/base.scss */
 th {
   font-weight: bold;
 }
 
-/* line 241, scss/base.scss */
+/* line 250, scss/base.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -444,7 +462,7 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 248, scss/base.scss */
+/* line 257, scss/base.scss */
 button,
 input,
 select,
@@ -461,14 +479,14 @@ textarea {
   line-height: 1.5;
 }
 
-/* line 257, scss/base.scss */
+/* line 266, scss/base.scss */
 button,
 input {
   line-height: normal;
   /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
 }
 
-/* line 263, scss/base.scss */
+/* line 272, scss/base.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -493,7 +511,7 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
-/* line 284, scss/base.scss */
+/* line 293, scss/base.scss */
 button:hover,
 html input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -502,7 +520,7 @@ input[type="submit"]:hover {
   color: #fff;
 }
 
-/* line 295, scss/base.scss */
+/* line 304, scss/base.scss */
 button:focus,
 html input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -515,7 +533,7 @@ input[type="submit"]:active {
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* line 300, scss/base.scss */
+/* line 309, scss/base.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -524,7 +542,7 @@ input[type="radio"] {
   /* Addresses excess padding in IE8/9 */
 }
 
-/* line 304, scss/base.scss */
+/* line 313, scss/base.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
@@ -534,13 +552,13 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 310, scss/base.scss */
+/* line 319, scss/base.scss */
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
   -webkit-appearance: none;
 }
 
-/* line 314, scss/base.scss */
+/* line 323, scss/base.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
@@ -548,7 +566,7 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/* line 322, scss/base.scss */
+/* line 331, scss/base.scss */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -559,7 +577,7 @@ textarea {
   border-radius: 0px;
 }
 
-/* line 331, scss/base.scss */
+/* line 340, scss/base.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
@@ -568,7 +586,7 @@ textarea:focus {
   color: #111;
 }
 
-/* line 337, scss/base.scss */
+/* line 346, scss/base.scss */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -576,7 +594,7 @@ input[type="search"] {
   padding: 10px;
 }
 
-/* line 340, scss/base.scss */
+/* line 349, scss/base.scss */
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -587,19 +605,19 @@ textarea {
 }
 
 /* Links */
-/* line 348, scss/base.scss */
+/* line 357, scss/base.scss */
 a {
   color: #313131;
   text-decoration: none;
 }
 
-/* line 352, scss/base.scss */
+/* line 361, scss/base.scss */
 a:visited {
   color: #666;
   outline: none;
 }
 
-/* line 358, scss/base.scss */
+/* line 367, scss/base.scss */
 a:hover,
 a:focus,
 a:active {
@@ -607,21 +625,21 @@ a:active {
 }
 
 /* Alignment */
-/* line 363, scss/base.scss */
+/* line 372, scss/base.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
-/* line 368, scss/base.scss */
+/* line 377, scss/base.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
-/* line 373, scss/base.scss */
+/* line 382, scss/base.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -629,13 +647,13 @@ a:active {
 }
 
 /* Text meant only for screen readers */
-/* line 380, scss/base.scss */
+/* line 389, scss/base.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
 }
 
-/* line 387, scss/base.scss */
+/* line 396, scss/base.scss */
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
@@ -659,7 +677,7 @@ a:active {
 }
 
 /* Clearing */
-/* line 412, scss/base.scss */
+/* line 421, scss/base.scss */
 .clear:before,
 .clear:after,
 [class*="content"]:before,
@@ -670,7 +688,7 @@ a:active {
   display: table;
 }
 
-/* line 419, scss/base.scss */
+/* line 428, scss/base.scss */
 .clear:after,
 [class*="content"]:after,
 [class*="site"]:after {
@@ -1315,80 +1333,89 @@ input, textarea, select, .input-block input {
   color: #fff;
 }
 
-/*portfolio items*/
-/* line 483, scss/style.scss */
-.portfolio-item {
-  margin-left: 0;
-  margin-bottom: 20px;
-  position: relative;
-  border: 1px solid #333;
-}
-
+/*Portfolio */
 /* line 484, scss/style.scss */
-.portfolio-item a {
-  display: block;
-}
-
-/* line 485, scss/style.scss */
-.portfolio-item a img {
-  display: block;
+.portfolio-item {
+  list-style: none;
+  border: 1px solid #222;
+  vertical-align: top;
 }
 
 /* line 486, scss/style.scss */
-.portfolio-item a img:hover {
-  opacity: 0.8;
-  -moz-opacity: 0.8;
-  -webkit-opacity: 0.8;
+.portfolio-grid {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 493, scss/style.scss */
+.portfolio-grid li {
+  display: inline-block;
+  margin: 10px 10px 0 10px;
+  vertical-align: top;
+  background: #f40;
+  /*height: 250px;*/
+}
+
+/* line 501, scss/style.scss */
+.portfolio-grid li > a,
+.portfolio-grid li > a img {
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
 }
 
 /*============================================================ TABLET ==========================================*/
 @media only screen and (min-width: 767px) {
   /* Tablets/netbooks (768px+) styles go here */
-  /* line 494, scss/style.scss */
+  /* line 524, scss/style.scss */
   hgroup {
     float: left;
   }
 
-  /* line 497, scss/style.scss */
+  /* line 527, scss/style.scss */
   h1#logo a {
     margin: 10px 0;
   }
 
-  /* line 500, scss/style.scss */
+  /* line 530, scss/style.scss */
   .menu-toggle {
     width: 90%;
     display: none;
   }
 
   /* Responsive iFrame */
-  /* line 503, scss/style.scss */
+  /* line 533, scss/style.scss */
   .responsive-iframe-container {
     height: 300px;
   }
 
-  /* line 506, scss/style.scss */
+  /* line 536, scss/style.scss */
   .content {
     margin: 20px auto;
   }
 
   /* =Menu
   ----------------------------------------------- */
-  /* line 513, scss/style.scss */
+  /* line 543, scss/style.scss */
   .menu ul {
     border: none;
   }
 
-  /* line 514, scss/style.scss */
+  /* line 544, scss/style.scss */
   .menu ul li {
     border: none;
   }
 
-  /* line 515, scss/style.scss */
+  /* line 545, scss/style.scss */
   .menu ul li a {
     color: #313131;
   }
 
-  /* line 516, scss/style.scss */
+  /* line 546, scss/style.scss */
   nav {
     position: relative;
     line-height: 2em;
@@ -1396,14 +1423,14 @@ input, textarea, select, .input-block input {
     font-weight: 400;
   }
 
-  /* line 522, scss/style.scss */
+  /* line 552, scss/style.scss */
   .navigation-main {
     display: block;
     padding: 0 !important;
     margin: -6px auto !important;
   }
 
-  /* line 527, scss/style.scss */
+  /* line 557, scss/style.scss */
   .navigation-main ul {
     display: block;
     list-style: none;
@@ -1412,13 +1439,13 @@ input, textarea, select, .input-block input {
     height: 100px;
   }
 
-  /* line 534, scss/style.scss */
+  /* line 564, scss/style.scss */
   .navigation-main ul li {
     float: left;
     height: 100%;
   }
 
-  /* line 538, scss/style.scss */
+  /* line 568, scss/style.scss */
   .navigation-main li a {
     float: left;
     color: #444;
@@ -1435,7 +1462,7 @@ input, textarea, select, .input-block input {
     transition: background 0.3s ease;
   }
 
-  /* line 554, scss/style.scss */
+  /* line 584, scss/style.scss */
   .navigation-main li.current_page_item a {
     background: #f8f8f8;
     border-top: 6px solid #69bd45;
@@ -1445,7 +1472,7 @@ input, textarea, select, .input-block input {
   }
 
   /*HOVER*/
-  /* line 562, scss/style.scss */
+  /* line 592, scss/style.scss */
   .navigation-main li a:hover {
     background: #f8f8f8;
     color: #222;
@@ -1456,13 +1483,13 @@ input, textarea, select, .input-block input {
   }
 
   /*VISITED*/
-  /* line 571, scss/style.scss */
+  /* line 601, scss/style.scss */
   .navigation-main li a:visited {
     /*color:#fff;*/
   }
 
   /* Dropdown */
-  /* line 576, scss/style.scss */
+  /* line 606, scss/style.scss */
   .navigation-main li:hover > ul {
     display: block;
     top: 100px;
@@ -1471,14 +1498,14 @@ input, textarea, select, .input-block input {
   }
 
   @-moz-document url-prefix() {
-    /* line 582, scss/style.scss */
+    /* line 612, scss/style.scss */
     .navigation-main li:hover > ul {
       top: 100px;
       /* Firefox Hack */
     }
 }
 
-  /* line 587, scss/style.scss */
+  /* line 617, scss/style.scss */
   .navigation-main ul ul {
     background: #313131;
     -webkit-box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.2);
@@ -1491,12 +1518,12 @@ input, textarea, select, .input-block input {
     z-index: 99;
   }
 
-  /* line 599, scss/style.scss */
+  /* line 629, scss/style.scss */
   .navigation-main ul ul li {
     float: none;
   }
 
-  /* line 601, scss/style.scss */
+  /* line 631, scss/style.scss */
   .navigation-main ul ul a {
     border: 0;
     border-bottom: 1px solid #252525;
@@ -1514,7 +1541,7 @@ input, textarea, select, .input-block input {
     min-width: 100%;
   }
 
-  /* line 622, scss/style.scss */
+  /* line 652, scss/style.scss */
   .navigation-main ul ul a:hover,
   .navigation-main ul ul .current_page_item > a,
   .navigation-main ul ul .current_page_parent > a,
@@ -1525,7 +1552,7 @@ input, textarea, select, .input-block input {
     padding-top: 3px !important;
   }
 
-  /* line 630, scss/style.scss */
+  /* line 660, scss/style.scss */
   .not-ie .navigation-main ul ul .current_page_item:after, .not-ie .navigation-main ul ul .current-menu-item:after,
   .not-ie .navigation-main ul ul .current_page_parent:after,
   .not-ie .navigation-main ul ul .current_page_ancestor:after, .not-ie .navigation-main ul ul .current-menu-ancestor:after {
@@ -1533,7 +1560,7 @@ input, textarea, select, .input-block input {
   }
 
   /* Sub Dropdown */
-  /* line 633, scss/style.scss */
+  /* line 663, scss/style.scss */
   .navigation-main ul ul ul {
     left: 158px !important;
     top: 46px !important;
@@ -1542,7 +1569,7 @@ input, textarea, select, .input-block input {
     line-height: 14px;
   }
 
-  /* line 641, scss/style.scss */
+  /* line 671, scss/style.scss */
   .sub-menu li a {
     border: 1px solid #222;
   }
@@ -1580,23 +1607,23 @@ input, textarea, select, .input-block input {
   }
   */
   /* Small menu */
-  /* line 682, scss/style.scss */
+  /* line 712, scss/style.scss */
   .menu-toggle {
     display: none;
     cursor: pointer;
   }
 
-  /* line 687, scss/style.scss */
+  /* line 717, scss/style.scss */
   .main-small-navigation ul {
     display: none;
   }
 
-  /* line 691, scss/style.scss */
+  /* line 721, scss/style.scss */
   .navigation-main small {
     display: none;
   }
 
-  /* line 695, scss/style.scss */
+  /* line 725, scss/style.scss */
   #service-box ul li {
     display: inline-block;
     width: 28%;
@@ -1604,19 +1631,19 @@ input, textarea, select, .input-block input {
   }
 
   /* Layout: Content-Sidebar */
-  /* line 704, scss/style.scss */
+  /* line 734, scss/style.scss */
   .content-area {
     float: left;
     margin: 0 -25% 0 0;
     width: 100%;
   }
 
-  /* line 709, scss/style.scss */
+  /* line 739, scss/style.scss */
   .site-content {
     margin: 0 25% 0 0;
   }
 
-  /* line 712, scss/style.scss */
+  /* line 742, scss/style.scss */
   .site-main .widget-area {
     float: right;
     overflow: hidden;
@@ -1626,60 +1653,60 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Contact Us
   /* -------------------------------------------------- */
-  /* line 721, scss/style.scss */
+  /* line 751, scss/style.scss */
   .wpcf7-form, #contact-info {
     margin: 0px;
   }
 
-  /* line 722, scss/style.scss */
+  /* line 752, scss/style.scss */
   .wpcf7-form, #commentform {
     max-width: 100%;
   }
 
-  /* line 723, scss/style.scss */
+  /* line 753, scss/style.scss */
   .wpcf7-form {
     margin: 0 -20px 0 0;
   }
 
-  /* line 724, scss/style.scss */
+  /* line 754, scss/style.scss */
   .wpcf7-form-control-wrap br, .wpcf7-form-control-wrap p {
     display: none;
   }
 
-  /* line 725, scss/style.scss */
+  /* line 755, scss/style.scss */
   .wpcf7-form .input-block, #commentform .input-block {
     float: left !important;
     margin: 0 15px 20px 0;
   }
 
-  /* line 729, scss/style.scss */
+  /* line 759, scss/style.scss */
   .wpcf7-form .input-block:nth-of-type(3n), #commentform .input-block:nth-of-type(3n) {
     margin-right: 0;
   }
 
-  /* line 730, scss/style.scss */
+  /* line 760, scss/style.scss */
   .wpcf7-form input {
     width: 157px;
   }
 
-  /* line 731, scss/style.scss */
+  /* line 761, scss/style.scss */
   .wpcf7-form .textarea-block, #commentform .textarea-block {
     clear: both;
   }
 
-  /* line 732, scss/style.scss */
+  /* line 762, scss/style.scss */
   .wpcf7-form textarea {
     width: 500px;
   }
 
-  /* line 733, scss/style.scss */
+  /* line 763, scss/style.scss */
   .wpcf7-not-valid-tip {
     color: #f02932;
     display: block;
     margin: 5px 0 0;
   }
 
-  /* line 739, scss/style.scss */
+  /* line 769, scss/style.scss */
   .wpcf7-form input[type="submit"], #commentform input[type="submit"],
   .wpcf7-form input[type="reset"], #commentform input[type="reset"] {
     display: block;
@@ -1687,7 +1714,7 @@ input, textarea, select, .input-block input {
     width: auto !important;
   }
 
-  /* line 744, scss/style.scss */
+  /* line 774, scss/style.scss */
   .wpcf7-response-output {
     margin: -20px 0 0;
   }
@@ -1695,28 +1722,28 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Pricing Tables
   /* -------------------------------------------------- */
-  /* line 750, scss/style.scss */
+  /* line 780, scss/style.scss */
   .pricing-table .featured .header {
     margin-top: -20px;
   }
 
-  /* line 751, scss/style.scss */
+  /* line 781, scss/style.scss */
   .pricing-table .features {
     border-left: 1px solid #fff;
   }
 
-  /* line 753, scss/style.scss */
+  /* line 783, scss/style.scss */
   .column {
     width: 25%;
   }
 
-  /* line 754, scss/style.scss */
+  /* line 784, scss/style.scss */
   .pricing-table .featured {
     border-left: 1px solid #f8f8f8;
     border-right: 1px solid #f8f8f8;
   }
 
-  /* line 756, scss/style.scss */
+  /* line 786, scss/style.scss */
   .features-list {
     text-align: left;
     font-size: .9em;
@@ -1724,13 +1751,13 @@ input, textarea, select, .input-block input {
     line-height: 1.5em;
   }
 
-  /* line 757, scss/style.scss */
+  /* line 787, scss/style.scss */
   .features-list li {
     padding-right: 0 !important;
   }
 
   /* Portfolio */
-  /* line 763, scss/style.scss */
+  /* line 793, scss/style.scss */
   .portfolio-item {
     margin-left: 2%;
   }
@@ -1739,36 +1766,36 @@ input, textarea, select, .input-block input {
 /*============================================================ DESKTOP ==========================================*/
 @media only screen and (min-width: 1024px) {
   /* Desktops (1024px+) styles go here */
-  /* line 777, scss/style.scss */
+  /* line 809, scss/style.scss */
   hgroup {
     background: #fff;
   }
 
-  /* line 778, scss/style.scss */
+  /* line 810, scss/style.scss */
   nav {
     font-size: .9em;
     line-height: 2em;
   }
 
   /* Responsive iFrame */
-  /* line 781, scss/style.scss */
+  /* line 813, scss/style.scss */
   .responsive-iframe-container {
     height: 400px;
   }
 
-  /* line 783, scss/style.scss */
+  /* line 815, scss/style.scss */
   .navigation-main li a {
     padding: 38px 20px 12px;
   }
 
   /*dropdown*/
-  /* line 786, scss/style.scss */
+  /* line 818, scss/style.scss */
   .navigation-main ul ul a {
     background: #444;
     font-size: .8em;
   }
 
-  /* line 791, scss/style.scss */
+  /* line 823, scss/style.scss */
   .navigation-main small {
     display: block;
     font-size: .8em;
@@ -1779,7 +1806,7 @@ input, textarea, select, .input-block input {
     font-weight: 300;
   }
 
-  /* line 801, scss/style.scss */
+  /* line 833, scss/style.scss */
   #service-box ul li {
     display: inline-block;
     width: 29%;
@@ -1788,17 +1815,17 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Contact Us
   /* -------------------------------------------------- */
-  /* line 806, scss/style.scss */
+  /* line 838, scss/style.scss */
   .wpcf7-form .input-block, #commentform .input-block {
     margin: 0 20px 20px 0;
   }
 
-  /* line 809, scss/style.scss */
+  /* line 841, scss/style.scss */
   .wpcf7-form input {
     width: 213px !important;
   }
 
-  /* line 810, scss/style.scss */
+  /* line 842, scss/style.scss */
   .wpcf7-form textarea {
     height: 150px;
     max-width: 100%;
@@ -1808,22 +1835,22 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Pricing Tables
   /* -------------------------------------------------- */
-  /* line 819, scss/style.scss */
+  /* line 851, scss/style.scss */
   .pricing-table .features-list {
     display: block;
   }
 
-  /* line 820, scss/style.scss */
+  /* line 852, scss/style.scss */
   .pricing-table .features li:before {
     display: none;
   }
 
-  /* line 821, scss/style.scss */
+  /* line 853, scss/style.scss */
   .pricing-table .features-list .features {
     border-left: none;
   }
 
-  /* line 823, scss/style.scss */
+  /* line 855, scss/style.scss */
   .column {
     width: 20%;
   }
@@ -1925,5 +1952,231 @@ input, textarea, select, .input-block input {
   
   
   */
+  /* Portfolio Grid Styles */
+  /* og-expanded, og-expander are in grid.js file */
+  /* line 968, scss/style.scss */
+  .portfolio-grid li.og-expanded > a::after {
+    top: auto;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #ddd;
+    border-width: 15px;
+    left: 50%;
+    margin: -20px 0 0 -15px;
+  }
+
+  /* CSS for triangle at top of expanded section */
+  /* line 982, scss/style.scss */
+  .og-expander {
+    position: absolute;
+    background: #ddd;
+    top: auto;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    height: 0;
+    overflow: hidden;
+  }
+
+  /* CSS for expanded section */
+  /* line 994, scss/style.scss */
+  .og-expander-inner {
+    padding: 50px 30px;
+    height: 100%;
+  }
+
+  /* line 999, scss/style.scss */
+  .og-close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  /* CSS for close X in expanded section */
+  /* line 1009, scss/style.scss */
+  .og-close::before,
+  .og-close::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    height: 1px;
+    background: #888;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* CSS for close X in expanded section */
+  /* line 1021, scss/style.scss */
+  .og-close::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  /* CSS for close X in expanded section */
+  /* line 1028, scss/style.scss */
+  .og-close:hover::before,
+  .og-close:hover::after {
+    background: #333;
+  }
+
+  /* CSS for close X in expanded section */
+  /* line 1033, scss/style.scss */
+  .og-fullimg,
+  .og-details {
+    width: 50%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* CSS for placement of image/details in expanded section */
+  /* line 1041, scss/style.scss */
+  .og-details {
+    padding: 0 40px 0 20px;
+  }
+
+  /* CSS for details in expanded section */
+  /* line 1045, scss/style.scss */
+  .og-fullimg {
+    text-align: center;
+  }
+
+  /* line 1049, scss/style.scss */
+  .og-fullimg img {
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  /* line 1055, scss/style.scss */
+  .og-details h3 {
+    font-weight: 300;
+    font-size: 52px;
+    padding: 40px 0 10px;
+    margin-bottom: 10px;
+  }
+
+  /* CSS for details heading in expanded section */
+  /* line 1062, scss/style.scss */
+  .og-details p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999;
+  }
+
+  /* CSS for details paragraph in expanded section */
+  /* line 1069, scss/style.scss */
+  .og-details a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 3px solid #333;
+    display: inline-block;
+    margin: 30px 0 0;
+    outline: none;
+  }
+
+  /* CSS for visit website button in expanded section */
+  /* line 1082, scss/style.scss */
+  .og-details a::before {
+    content: '\2192';
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  /* line 1088, scss/style.scss */
+  .og-details a:hover {
+    border-color: #999;
+    color: #999;
+  }
+
+  /* line 1093, scss/style.scss */
+  .og-loading {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ddd;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #cccccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    -webkit-animation: loader 0.5s infinite ease-in-out both;
+    -moz-animation: loader 0.5s infinite ease-in-out both;
+    animation: loader 0.5s infinite ease-in-out both;
+  }
+
+  @-webkit-keyframes loader {
+    /* line 1109, scss/style.scss */
+    0% {
+      background: #ddd;
+    }
+
+    /* line 1110, scss/style.scss */
+    33% {
+      background: #ccc;
+      box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+    }
+
+    /* line 1111, scss/style.scss */
+    66% {
+      background: #ccc;
+      box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+    }
+}
+
+  @-moz-keyframes loader {
+    /* line 1115, scss/style.scss */
+    0% {
+      background: #ddd;
+    }
+
+    /* line 1116, scss/style.scss */
+    33% {
+      background: #ccc;
+      box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+    }
+
+    /* line 1117, scss/style.scss */
+    66% {
+      background: #ccc;
+      box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+    }
+}
+
+  @keyframes loader {
+    /* line 1121, scss/style.scss */
+    0% {
+      background: #ddd;
+    }
+
+    /* line 1122, scss/style.scss */
+    33% {
+      background: #ccc;
+      box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+    }
+
+    /* line 1123, scss/style.scss */
+    66% {
+      background: #ccc;
+      box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+    }
+}
 }
 /* End Desktop */

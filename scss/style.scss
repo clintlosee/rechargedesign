@@ -24,7 +24,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.9.97
+Version: 1.9.98
 License: GNU General Public License
 License URI: license.txt
 Tags:
@@ -479,11 +479,41 @@ input, textarea, select, .input-block input {
 
 
 
-/*portfolio items*/
-.portfolio-item { margin-left:0; margin-bottom: 20px; position: relative; border:1px solid #333; }
-.portfolio-item a { display: block }
-.portfolio-item a img { display: block }
-.portfolio-item a img:hover { opacity: 0.8; -moz-opacity: 0.8; -webkit-opacity: 0.8; }
+/*Portfolio */
+
+.portfolio-item { list-style: none; border:1px solid #222; vertical-align: top;  }
+
+.portfolio-grid {
+	list-style: none;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+.portfolio-grid li {
+	display: inline-block;
+	margin: 10px 10px 0 10px;
+	vertical-align: top;
+	background:#f40;
+	/*height: 250px;*/
+}
+.portfolio-grid li > a,
+.portfolio-grid li > a img {
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -765,6 +795,8 @@ nav ul li a {  }
 
 
 
+
+
 } /* End Tablet */
 
 
@@ -924,6 +956,172 @@ nav { font-size: .9em; line-height:2em; }
 
 */
 
+/* Portfolio Grid Styles */
+
+
+
+
+
+
+/* og-expanded, og-expander are in grid.js file */
+
+.portfolio-grid li.og-expanded > a::after {
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #ddd;
+	border-width: 15px;
+	left: 50%;
+	margin: -20px 0 0 -15px;
+}/* CSS for triangle at top of expanded section */
+
+.og-expander {
+	position: absolute;
+	background: #ddd;
+	top: auto;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: left;
+	height: 0;
+	overflow: hidden;
+}/* CSS for expanded section */
+
+.og-expander-inner {
+	padding: 50px 30px;
+	height: 100%;
+}
+
+.og-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}/* CSS for close X in expanded section */
+
+.og-close::before,
+.og-close::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+	background: #888;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}/* CSS for close X in expanded section */
+
+.og-close::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}/* CSS for close X in expanded section */
+
+.og-close:hover::before,
+.og-close:hover::after {
+	background: #333;
+}/* CSS for close X in expanded section */
+
+.og-fullimg,
+.og-details {
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}/* CSS for placement of image/details in expanded section */
+
+.og-details {
+	padding: 0 40px 0 20px;
+}/* CSS for details in expanded section */
+
+.og-fullimg {
+	text-align: center;
+}
+
+.og-fullimg img {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.og-details h3 {
+	font-weight: 300;
+	font-size: 52px;
+	padding: 40px 0 10px;
+	margin-bottom: 10px;
+}/* CSS for details heading in expanded section */
+
+.og-details p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #999;
+}/* CSS for details paragraph in expanded section */
+
+.og-details a {
+	font-weight: 700;
+	font-size: 16px;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	border: 3px solid #333;
+	display: inline-block;
+	margin: 30px 0 0;
+	outline: none;
+}/* CSS for visit website button in expanded section */
+
+.og-details a::before {
+	content: '\2192';
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.og-details a:hover {
+	border-color: #999;
+	color: #999;
+}
+
+.og-loading {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ddd;
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	-webkit-animation: loader 0.5s infinite ease-in-out both;
+	-moz-animation: loader 0.5s infinite ease-in-out both;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
 
 
 } /* End Desktop */

@@ -125,6 +125,15 @@ add_action( 'widgets_init', 'recharge_design_widgets_init' );
 */
 require_once('portfolio-manager.php');
 
+/* Force WordPress to rewrite properly */
+add_action('init', 'portfolio_rewrite');
+function portfolio_rewrite() {
+	global $wp_rewrite;
+	$wp_rewrite->add_permastruct('typename', 'typename/%year%/%postname%/', true, 1);
+	add_rewrite_rule('typename/([0-9]{4})/(.+)/?$', 'index.php?typename=$matches[2]', 'top');
+	$wp_rewrite->flush_rules();
+}
+
 /**
  * Enqueue scripts and styles
  */
@@ -144,8 +153,11 @@ function recharge_design_scripts() {
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( 'Recharge Design-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
+	
+	//wp_enqueue_script( 'Portfolio-Grid', get_template_directory_uri() . '/js/grid.js', array('jquery'), '20130814', true );
 }
 add_action( 'wp_enqueue_scripts', 'recharge_design_scripts' );
+
 
 /**
  * Implement the Custom Header feature

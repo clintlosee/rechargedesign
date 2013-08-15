@@ -7,21 +7,23 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<div id="primary" class="">
+		<div id="content" class="" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
+		<div class="portfolio-page">
 			<div class="grid-60">
 				<?php the_post_thumbnail('portfolio'); ?>
 			</div>
-			<div class="grid-40">
+			<div class="grid-40 portfolio-details">
 				<h2><?php the_title(); ?></h2>
 				<p><?php the_content(); ?> </p>
 
 			</div>
 
 			<?php //recharge_design_content_nav( 'nav-below' ); ?>
+		</div>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template

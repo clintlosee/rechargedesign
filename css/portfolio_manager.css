@@ -1,0 +1,15 @@
+/* Admin Styles */
+.portfolio-manager-extras {
+	margin:10px;
+}
+.portfolio-manager-extras div label {
+	width:100px;
+	float:left;
+}
+.portfolio-manager-extras div input {
+	width:400px;
+}
+.portfolio-manager-extras div textarea {
+	width:410px;
+	height:100px;
+}
