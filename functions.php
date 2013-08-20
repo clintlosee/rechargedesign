@@ -154,10 +154,10 @@ function recharge_design_scripts() {
 		wp_enqueue_script( 'Recharge Design-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
 	
-	//wp_enqueue_script( 'Portfolio-Grid', get_template_directory_uri() . '/js/grid.js', array('jquery'), '20130814', true );
+	//wp_enqueue_script( 'Quicksand', get_template_directory_uri() . '/js/quicksand.js', 'jquery' );
+	//wp_enqueue_script( 'Custom', get_template_directory_uri() . '/js/custom.js', 'jquery', '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'recharge_design_scripts' );
-
 
 /**
  * Implement the Custom Header feature
@@ -212,4 +212,37 @@ add_action('layerslider_ready', 'my_layerslider_overrides');
  	$GLOBALS['lsAutoUpdateBox'] = false;     
  }
 
+ // Register Footer Widget Areas
+ function rcd_widgets_init() {
+register_sidebar( array(
+    'name' => __( 'Footer Area 1', 'rcd' ),
+    'id' => 'footer-1',
+    'description' => __( 'The left side widget area in the footer', 'rcd' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+
+register_sidebar( array(
+    'name' =>__( 'Footer Area 2', 'rcd'),
+    'id' => 'footer-2',
+    'description' => __( 'The middle widget area in the footer', 'rcd' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+
+register_sidebar( array(
+    'name' =>__( 'Footer Area 3', 'rcd'),
+    'id' => 'footer-3',
+    'description' => __( 'The right side widget area in the footer', 'rcd' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+}
  
+add_action( 'widgets_init', 'rcd_widgets_init' );

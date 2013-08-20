@@ -12,13 +12,55 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="grid-container">	
-			<div class="site-info">
-				<?php do_action( 'recharge_design_credits' ); ?>
-				<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'recharge_design' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'recharge_design' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by %2$s.', 'recharge_design' ), 'Recharge Web Design', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-			</div><!-- .site-info -->
-		</div><!-- End .grid-container -->
+			
+
+			<div id="footer-one" class="grid-30 mobile-grid-100 widget">
+            	<?php if ( ! dynamic_sidebar('footer-1') ) : ?>
+
+					<aside id="archives" class="widget">
+						<h1 class="widget-title"><?php _e( 'Archives', 'recharge_design' ); ?></h1>
+						<ul>
+							<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+						</ul>
+					</aside>
+
+				<?php endif; // end footer widget area ?>
+            </div>
+            <!-- /footer-one -->
+
+            <div id="footer-two" class="grid-30 mobile-grid-100 widget">
+            	<?php if ( ! dynamic_sidebar( 'footer-2' ) ) : ?>
+
+					<aside id="search" class="widget widget_search">
+						<?php get_search_form(); ?>
+					</aside>
+
+				<?php endif; // end footer widget area ?>
+            </div>
+            <!-- /footer-one -->
+
+            <div id="footer-three" class="grid-30 mobile-grid-100 site-info widget">
+            	<?php if ( ! dynamic_sidebar('footer-3') ) : ?>
+
+	            	<?php do_action( 'recharge_design_credits' ); ?>
+					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'recharge_design' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'recharge_design' ), 'WordPress' ); ?></a>
+					<span class="sep"> | </span>
+					<?php printf( __( 'Theme: %1$s by %2$s.', 'recharge_design' ), 'Recharge Web Design', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+aksjdf;lkajsdf;aks
+d;alksjf;alskjdf<br />
+;sldkfja;slkjdfa<br />
+;aslkjdf;aslkjdf<br />
+;aslkdjf;aslkjdf<br />
+
+
+				<?php endif; // end sidebar widget area ?>
+            </div>
+            <!-- /footer-one -->
+
+
+
+
+		</div><!-- End #grid-container -->
 	</footer><!-- #colophon .site-footer -->
 </div><!-- #page .hfeed .site -->
 

@@ -32,9 +32,14 @@ get_header(); ?>
 			<?php //get_template_part( 'content', 'page' ); ?>
 
 
-				<!-- Test Portfolio Page 
-		<div class="portfolio-grid">-->
-			<ul id="og-grid" class="portfolio-grid">
+
+
+
+
+
+				<!-- Test Portfolio Page -->		
+
+			<ul class="portfolio-grid">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<?php
 				$custom = get_post_custom($post->ID);
@@ -74,17 +79,6 @@ get_header(); ?>
 			
 			<?php endwhile; endif; ?>
 </ul>
-<!--		</div> end portfolio-grid -->
-
-
-
-
-
-
-
-
-
-
 
 
 

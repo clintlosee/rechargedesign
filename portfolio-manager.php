@@ -25,8 +25,8 @@ function create_portfolio_post_type() {
         'view' => 'View Portfolio',
         'view_item' => 'View Portfolio Item',
         'search_items' => 'Search Portfolio',
-        'not_found' => 'No Test Found',
-        'not_found_in_trash' => 'No Test Found in Trash',
+        'not_found' => 'No Portfolio Items Found',
+        'not_found_in_trash' => 'No Portfolio Items in Trash',
         'parent' => 'Parent Test',
       )
     ) 
@@ -88,5 +88,28 @@ function portfolio_manager_save_extras() {
             $_POST["description"]);
     }
 }
+
+function portfolio_filter()
+{
+    // Register the Taxonomy
+    register_taxonomy(__( "filter" ), 
+    
+    // Assign the taxonomy to be part of the portfolio post type
+    array(__( "portfolio" )), 
+    
+    // Apply the settings for the taxonomy
+    array(
+        "hierarchical" => true, 
+        "label" => __( "Filter" ), 
+        "singular_label" => __( "Filter" ), 
+        "rewrite" => array(
+                'slug' => 'filter', 
+                'hierarchical' => true
+                )
+        )
+    ); 
+} // function: portfolio_filter taxonomy END
+
+add_action( 'init', 'portfolio_filter', 0 );
 
 ?>

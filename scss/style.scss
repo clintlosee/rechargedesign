@@ -54,7 +54,7 @@ header {
 }
 .site-header { border-bottom:1px solid $borderColor; padding-right:0 !important; border-top:6px solid $mainGrey; }
 .site { min-height: 100%; position:relative;  }
-.content { padding-bottom:150px; }
+.content { padding-bottom:450px; }
 
 h1#logo a {
 	background: url("img/logonew.png") no-repeat;
@@ -70,10 +70,21 @@ footer {
 	left:0;
 	background: #3a3a3a;
 	width: 100%;
-	height: 150px;
+	height: auto;
 	border-bottom: 30px solid $mainGrey;
-	color:#676767;
+	color:#868686;
+	overflow:hidden;
 }
+footer a { 
+	color:#868686;
+	/*TRANSISTIONS*/
+    -webkit-transition: color 3s ease;
+       -moz-transition: color 3s ease;
+         -o-transition: color 3s ease;
+        -ms-transition: color 3s ease;
+            transition: color 3s ease;
+}
+footer a:hover { color:$mainGreen; }
 .entry-meta {
 	background:none !important;
 	border:none !important;
@@ -104,11 +115,11 @@ footer {
 	cursor:pointer;
 	float:right;
 	/*TRANSISTIONS*/
-	    -webkit-transition: background 0.3s ease;
-	       -moz-transition: background 0.3s ease;
-	         -o-transition: background 0.3s ease;
-	        -ms-transition: background 0.3s ease;
-	            transition: background 0.3s ease;
+	    -webkit-transition: background 3s ease;
+	       -moz-transition: background 3s ease;
+	         -o-transition: background 3s ease;
+	        -ms-transition: background 3s ease;
+	            transition: background 3s ease;
 }
 .menu-toggle {
 	position:relative;
@@ -460,28 +471,26 @@ input, textarea, select, .input-block input {
 .pricing-table .features-list .footer { background: none; }
 
 .pricing-table .footer .button {  color:#fff;
-	-webkit-transition: background-color .2s ease;
-	   -moz-transition: background-color .2s ease;
-		-ms-transition: background-color .2s ease;
-		 -o-transition: background-color .2s ease;
-			transition: background-color .2s ease;
+	-webkit-transition: background-color .3s ease;
+	   -moz-transition: background-color .3s ease;
+		-ms-transition: background-color .3s ease;
+		 -o-transition: background-color .3s ease;
+			transition: background-color .3s ease;
 }
 .pricing-table .footer .button:hover { background: $mainGreen; }
 
 .pricing-table .featured .footer .button { background: $mainGreen; color:$mainGrey; 
-	-webkit-transition: background-color .2s ease;
-	   -moz-transition: background-color .2s ease;
-		-ms-transition: background-color .2s ease;
-		 -o-transition: background-color .2s ease;
-			transition: background-color .2s ease;
+	-webkit-transition: background-color .3s ease;
+	   -moz-transition: background-color .3s ease;
+		-ms-transition: background-color .3s ease;
+		 -o-transition: background-color .3s ease;
+			transition: background-color .3s ease;
 }
 .pricing-table .featured .footer .button:hover { background:$mainGrey; color:#fff; }
 
 
 
 /*Portfolio */
-
-.portfolio-item { list-style: none; border:1px solid #222; vertical-align: top;  }
 
 .portfolio-grid {
 	list-style: none;
@@ -493,9 +502,16 @@ input, textarea, select, .input-block input {
 .portfolio-grid li {
 	display: inline-block;
 	margin: 10px 10px 0 10px;
+	padding:10px;
 	vertical-align: top;
-	background:#f40;
-	/*height: 250px;*/
+	background:$mainGrey;
+	width:250px;
+	height:180px;
+	-webkit-transition: background-color .3s ease;
+	   -moz-transition: background-color .3s ease;
+		-ms-transition: background-color .3s ease;
+		 -o-transition: background-color .3s ease;
+			transition: background-color .3s ease;
 }
 .portfolio-grid li > a,
 .portfolio-grid li > a img {
@@ -504,11 +520,11 @@ input, textarea, select, .input-block input {
 	display: block;
 	position: relative;
 }
+.portfolio-grid li:hover { background: $mainGreen; }
 
 
 
-
-
+#footer-one, #footer-two { }
 
 
 
@@ -527,6 +543,7 @@ hgroup {
 h1#logo a {
 	margin:10px 0;
 }
+.content { padding-bottom:150px; }
 .menu-toggle { width:90%; display:none; }
 
 /* Responsive iFrame */
@@ -564,6 +581,12 @@ nav {
 .navigation-main ul li {
 	float:left;
 	height:100%;
+	/*TRANSISTIONS*/
+    -webkit-transition: display 3s ease;
+       -moz-transition: display 3s ease;
+         -o-transition: display 3s ease;
+        -ms-transition: display 3s ease;
+            transition: display 3s ease;
 }
 .navigation-main li a {
 	float:left;
@@ -575,11 +598,11 @@ nav {
     text-transform: uppercase;
 	
 	/*TRANSISTIONS*/
-    -webkit-transition: background 0.3s ease;
-       -moz-transition: background 0.3s ease;
-         -o-transition: background 0.3s ease;
-        -ms-transition: background 0.3s ease;
-            transition: background 0.3s ease;
+    -webkit-transition: background 3s ease;
+       -moz-transition: background 3s ease;
+         -o-transition: background 3s ease;
+        -ms-transition: background 3s ease;
+            transition: background 3s ease;
 }
 .navigation-main li.current_page_item a { 
 		background: $lightGrey; 
@@ -790,7 +813,7 @@ nav ul li a {  }
 
 
 /* Portfolio */
-.portfolio-item { margin-left:2%; }
+
 
 
 
@@ -963,165 +986,15 @@ nav { font-size: .9em; line-height:2em; }
 
 
 
-/* og-expanded, og-expander are in grid.js file */
 
-.portfolio-grid li.og-expanded > a::after {
-	top: auto;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-bottom-color: #ddd;
-	border-width: 15px;
-	left: 50%;
-	margin: -20px 0 0 -15px;
-}/* CSS for triangle at top of expanded section */
 
-.og-expander {
-	position: absolute;
-	background: #ddd;
-	top: auto;
-	left: 0;
-	width: 100%;
-	margin-top: 10px;
-	text-align: left;
-	height: 0;
-	overflow: hidden;
-}/* CSS for expanded section */
 
-.og-expander-inner {
-	padding: 50px 30px;
-	height: 100%;
-}
 
-.og-close {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	top: 20px;
-	right: 20px;
-	cursor: pointer;
-}/* CSS for close X in expanded section */
 
-.og-close::before,
-.og-close::after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	height: 1px;
-	background: #888;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	transform: rotate(45deg);
-}/* CSS for close X in expanded section */
 
-.og-close::after {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}/* CSS for close X in expanded section */
 
-.og-close:hover::before,
-.og-close:hover::after {
-	background: #333;
-}/* CSS for close X in expanded section */
 
-.og-fullimg,
-.og-details {
-	width: 50%;
-	float: left;
-	height: 100%;
-	overflow: hidden;
-	position: relative;
-}/* CSS for placement of image/details in expanded section */
 
-.og-details {
-	padding: 0 40px 0 20px;
-}/* CSS for details in expanded section */
-
-.og-fullimg {
-	text-align: center;
-}
-
-.og-fullimg img {
-	display: inline-block;
-	max-height: 100%;
-	max-width: 100%;
-}
-
-.og-details h3 {
-	font-weight: 300;
-	font-size: 52px;
-	padding: 40px 0 10px;
-	margin-bottom: 10px;
-}/* CSS for details heading in expanded section */
-
-.og-details p {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 22px;
-	color: #999;
-}/* CSS for details paragraph in expanded section */
-
-.og-details a {
-	font-weight: 700;
-	font-size: 16px;
-	color: #333;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding: 10px 20px;
-	border: 3px solid #333;
-	display: inline-block;
-	margin: 30px 0 0;
-	outline: none;
-}/* CSS for visit website button in expanded section */
-
-.og-details a::before {
-	content: '\2192';
-	display: inline-block;
-	margin-right: 10px;
-}
-
-.og-details a:hover {
-	border-color: #999;
-	color: #999;
-}
-
-.og-loading {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background: #ddd;
-	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -25px 0 0 -25px;
-	-webkit-animation: loader 0.5s infinite ease-in-out both;
-	-moz-animation: loader 0.5s infinite ease-in-out both;
-	animation: loader 0.5s infinite ease-in-out both;
-}
-
-@-webkit-keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
-}
-
-@-moz-keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
-}
-
-@keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
-}
 
 
 } /* End Desktop */
