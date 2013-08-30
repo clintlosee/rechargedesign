@@ -2,7 +2,7 @@
 	<div class=" features-list grid-20 grid-parent">
 		<div class="header"></div>
 		<ul class="features">
-			<li data-tooltip="Tooltip - Optional description can go here!">Backup &amp; Update Frequency</li>
+			<li data-tip="Tooltip - Optional description can go here!">Backup &amp; Update Frequency</li>
 			<li data-tooltip="Tooltip - Optional description can go here!">WordPress Core Updates</li>
 			<li data-tooltip="Tooltip - Optional description can go here!">Theme &amp; Plugin Updates</li>
 			<li data-tooltip="Tooltip - Optional description can go here!">Stored Backups</li>

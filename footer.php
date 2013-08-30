@@ -7,14 +7,15 @@
  * @package Recharge Design
  */
 ?>
-
-	</div><!-- #main .grid-container .content .site-main -->
+		</div><!-- #primary -->
+	</div><!-- #main .grid-container .site-main -->
+</div><!-- end content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="grid-container">	
 			
 
-			<div id="footer-one" class="grid-30 mobile-grid-100 widget">
+			<div id="footer-one" class="grid-33 mobile-grid-100 widget footer-widget">
             	<?php if ( ! dynamic_sidebar('footer-1') ) : ?>
 
 					<aside id="archives" class="widget">
@@ -28,7 +29,7 @@
             </div>
             <!-- /footer-one -->
 
-            <div id="footer-two" class="grid-30 mobile-grid-100 widget">
+            <div id="footer-two" class="grid-33 mobile-grid-100 widget footer-widget">
             	<?php if ( ! dynamic_sidebar( 'footer-2' ) ) : ?>
 
 					<aside id="search" class="widget widget_search">
@@ -39,19 +40,13 @@
             </div>
             <!-- /footer-one -->
 
-            <div id="footer-three" class="grid-30 mobile-grid-100 site-info widget">
+            <div id="footer-three" class="grid-33 mobile-grid-100 site-info widget footer-widget">
             	<?php if ( ! dynamic_sidebar('footer-3') ) : ?>
 
 	            	<?php do_action( 'recharge_design_credits' ); ?>
 					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'recharge_design' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'recharge_design' ), 'WordPress' ); ?></a>
 					<span class="sep"> | </span>
 					<?php printf( __( 'Theme: %1$s by %2$s.', 'recharge_design' ), 'Recharge Web Design', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-aksjdf;lkajsdf;aks
-d;alksjf;alskjdf<br />
-;sldkfja;slkjdfa<br />
-;aslkjdf;aslkjdf<br />
-;aslkdjf;aslkjdf<br />
-
 
 				<?php endif; // end sidebar widget area ?>
             </div>

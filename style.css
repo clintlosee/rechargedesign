@@ -609,15 +609,21 @@ textarea {
 a {
   color: #313131;
   text-decoration: none;
+  /*TRANSISTIONS*/
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  transition: color .3s ease;
 }
 
-/* line 361, scss/base.scss */
+/* line 367, scss/base.scss */
 a:visited {
   color: #666;
   outline: none;
 }
 
-/* line 367, scss/base.scss */
+/* line 373, scss/base.scss */
 a:hover,
 a:focus,
 a:active {
@@ -625,21 +631,21 @@ a:active {
 }
 
 /* Alignment */
-/* line 372, scss/base.scss */
+/* line 378, scss/base.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
-/* line 377, scss/base.scss */
+/* line 383, scss/base.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
-/* line 382, scss/base.scss */
+/* line 388, scss/base.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -647,13 +653,13 @@ a:active {
 }
 
 /* Text meant only for screen readers */
-/* line 389, scss/base.scss */
+/* line 395, scss/base.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
 }
 
-/* line 396, scss/base.scss */
+/* line 402, scss/base.scss */
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
@@ -677,7 +683,7 @@ a:active {
 }
 
 /* Clearing */
-/* line 421, scss/base.scss */
+/* line 427, scss/base.scss */
 .clear:before,
 .clear:after,
 [class*="content"]:before,
@@ -688,7 +694,7 @@ a:active {
   display: table;
 }
 
-/* line 428, scss/base.scss */
+/* line 434, scss/base.scss */
 .clear:after,
 [class*="content"]:after,
 [class*="site"]:after {
@@ -703,32 +709,32 @@ body {
   color: #444;
 }
 
-/* line 52, scss/style.scss */
+/* line 51, scss/style.scss */
 header {
   height: auto;
 }
 
-/* line 55, scss/style.scss */
+/* line 54, scss/style.scss */
 .site-header {
   border-bottom: 1px solid #efefef;
   padding-right: 0 !important;
   border-top: 6px solid #313131;
 }
 
-/* line 56, scss/style.scss */
+/* line 55, scss/style.scss */
 .site {
   min-height: 100%;
   position: relative;
 }
 
-/* line 57, scss/style.scss */
+/* line 56, scss/style.scss */
 .content {
   padding-bottom: 450px;
 }
 
-/* line 59, scss/style.scss */
+/* line 58, scss/style.scss */
 h1#logo a {
-  background: url("img/logonew.png") no-repeat;
+  background: url("img/rechargelogo.png") no-repeat;
   width: 230px;
   height: 73px;
   margin: 10px auto;
@@ -740,6 +746,7 @@ h1#logo a {
   text-align: start;
 }
 
+/*********************** Footer **************************************/
 /* line 67, scss/style.scss */
 footer {
   position: absolute;
@@ -757,11 +764,11 @@ footer {
 footer a {
   color: #868686;
   /*TRANSISTIONS*/
-  -webkit-transition: color 3s ease;
-  -moz-transition: color 3s ease;
-  -o-transition: color 3s ease;
-  -ms-transition: color 3s ease;
-  transition: color 3s ease;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  transition: color .3s ease;
 }
 
 /* line 87, scss/style.scss */
@@ -770,13 +777,18 @@ footer a:hover {
 }
 
 /* line 88, scss/style.scss */
+#footer-one, #footer-two, #footer-three {
+  margin-top: 20px;
+}
+
+/* line 90, scss/style.scss */
 .entry-meta {
   background: none !important;
   border: none !important;
 }
 
 /* Responsive iFrame */
-/* line 94, scss/style.scss */
+/* line 96, scss/style.scss */
 .responsive-iframe-container {
   position: relative;
   padding-bottom: 5%;
@@ -784,7 +796,7 @@ footer a:hover {
   overflow: hidden;
 }
 
-/* line 102, scss/style.scss */
+/* line 104, scss/style.scss */
 .responsive-iframe-container iframe,
 .vresponsive-iframe-container object,
 .vresponsive-iframe-container embed {
@@ -797,21 +809,21 @@ footer a:hover {
 
 /* =Menu
 ----------------------------------------------- */
-/* line 113, scss/style.scss */
+/* line 115, scss/style.scss */
 .menu-toggle,
 .main-small-navigation ul.nav-menu.toggled-on {
   display: block;
   cursor: pointer;
   float: right;
   /*TRANSISTIONS*/
-  -webkit-transition: background 3s ease;
-  -moz-transition: background 3s ease;
-  -o-transition: background 3s ease;
-  -ms-transition: background 3s ease;
-  transition: background 3s ease;
+  -webkit-transition: background .3s ease;
+  -moz-transition: background .3s ease;
+  -o-transition: background .3s ease;
+  -ms-transition: background .3s ease;
+  transition: background .3s ease;
 }
 
-/* line 124, scss/style.scss */
+/* line 126, scss/style.scss */
 .menu-toggle {
   position: relative;
   float: left;
@@ -826,14 +838,14 @@ footer a:hover {
   text-align: center;
 }
 
-/* line 137, scss/style.scss */
+/* line 139, scss/style.scss */
 .main-small-navigation ul {
   list-style-type: none;
   width: 100%;
   background: #313131;
 }
 
-/* line 142, scss/style.scss */
+/* line 144, scss/style.scss */
 .main-small-navigation ul li {
   border-top: 1px solid #444;
   text-align: left;
@@ -845,135 +857,185 @@ footer a:hover {
   text-transform: uppercase;
 }
 
-/* line 152, scss/style.scss */
+/* line 154, scss/style.scss */
 .main-small-navigation ul li a {
   color: #eee;
   text-decoration: none;
 }
 
-/* line 156, scss/style.scss */
+/* line 158, scss/style.scss */
 .main-small-navigation ul li a:hover {
   color: #bbb;
 }
 
-/* line 159, scss/style.scss */
+/* line 161, scss/style.scss */
 .main-small-navigation ul ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 163, scss/style.scss */
+/* line 165, scss/style.scss */
 .main-small-navigation ul ul li {
   padding: 0 15px;
   margin: 0;
   font-size: .9em;
 }
 
-/* line 169, scss/style.scss */
+/* line 171, scss/style.scss */
 .navigation-main ul, .main-small-navigation small {
   display: none;
 }
 
 /* =Content
 ----------------------------------------------- */
-/* line 179, scss/style.scss */
+/* line 181, scss/style.scss */
 .hentry {
   margin: 0 0 1.5em;
 }
 
-/* line 182, scss/style.scss */
+/* line 184, scss/style.scss */
 .byline {
   display: none;
 }
 
-/* line 186, scss/style.scss */
+/* line 188, scss/style.scss */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
-/* line 190, scss/style.scss */
+/* line 192, scss/style.scss */
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
-/* line 193, scss/style.scss */
+/* line 195, scss/style.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
-/* line 198, scss/style.scss */
+/*********************************** Front Page **************/
+/* line 201, scss/style.scss */
 #service-box, #work-box {
   /*border: 1px solid #222;*/
 }
 
-/* line 201, scss/style.scss */
+/* line 204, scss/style.scss */
 #work-box {
   border: 1px solid #222;
 }
 
-/* line 204, scss/style.scss */
+/* line 207, scss/style.scss */
 #service-box ul, #work-box ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 207, scss/style.scss */
+/* line 210, scss/style.scss */
 #service-box ul li, #work-box ul li {
   border: none;
   list-style-type: none;
   margin: 20px 0;
 }
 
-/* line 212, scss/style.scss */
+/* line 215, scss/style.scss */
 #service-box h3 {
   text-align: center;
   color: #69bd45 !important;
 }
 
-/* line 216, scss/style.scss */
+/* line 219, scss/style.scss */
 #service-box h3 a span:hover {
   color: #69bd45;
 }
 
-/* line 218, scss/style.scss */
+/********************************************* Services Page **********************/
+/* line 222, scss/style.scss */
+.services {
+  height: 300px;
+  margin: 0;
+}
+
+/* line 226, scss/style.scss */
+#service-one, #service-two, #service-three {
+  padding: 10px 0;
+}
+
+/* line 227, scss/style.scss */
+#service-one h3, #service-two h3, #service-three h3 {
+  border-bottom: 2px solid #69bd45;
+}
+
+/* line 228, scss/style.scss */
+#webserviceimg {
+  background: url("img/ScreenMockup400x245.png") no-repeat;
+  width: 400px;
+  height: 245px;
+  margin-top: 25px;
+}
+
+/* line 234, scss/style.scss */
+#webserviceinfo {
+  padding: 20px;
+}
+
+/* line 237, scss/style.scss */
+#service-two {
+  background: #f8f8f8;
+}
+
+/* line 244, scss/style.scss */
+.border {
+  border: 1px solid #333;
+}
+
+/***************************************** Contact Page ***************************/
+/* line 248, scss/style.scss */
 #contact {
   padding: 20px 0;
   font-size: .8em;
 }
 
-/* line 222, scss/style.scss */
+/* line 252, scss/style.scss */
 #contact h3 {
   font-weight: bold;
   padding: 10px 0;
 }
 
 /* entypo */
-/* line 229, scss/style.scss */
+/* line 259, scss/style.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
-/* line 232, scss/style.scss */
+/* line 262, scss/style.scss */
 .entypoFront {
   font-size: 5em;
   line-height: 1.2em;
   color: #313131;
 }
 
-/* line 237, scss/style.scss */
+/* line 267, scss/style.scss */
+.entypoService {
+  font-size: 14em !important;
+  line-height: 1.2em;
+  color: #69bd45;
+  margin-left: 40px;
+}
+
+/* line 273, scss/style.scss */
 .entypoMenu {
   font-size: 1.2em;
 }
 
-/* line 238, scss/style.scss */
+/* line 274, scss/style.scss */
 .entypoPriceCancel {
   color: #313131;
 }
 
-/* line 239, scss/style.scss */
+/* line 275, scss/style.scss */
 .entypoPriceCheck {
   color: #69bd45;
   font-weight: bold;
@@ -981,7 +1043,7 @@ footer a:hover {
 
 /* =Asides
 ----------------------------------------------- */
-/* line 246, scss/style.scss */
+/* line 282, scss/style.scss */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -989,7 +1051,7 @@ footer a:hover {
 
 /* =Media
 ----------------------------------------------- */
-/* line 255, scss/style.scss */
+/* line 291, scss/style.scss */
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
   border: none;
@@ -998,49 +1060,49 @@ footer a:hover {
   padding: 0;
 }
 
-/* line 261, scss/style.scss */
+/* line 297, scss/style.scss */
 .wp-caption {
   border: 1px solid #ccc;
   margin-bottom: 1.5em;
   max-width: 100%;
 }
 
-/* line 266, scss/style.scss */
+/* line 302, scss/style.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin: 1.2% auto 0;
   max-width: 98%;
 }
 
-/* line 271, scss/style.scss */
+/* line 307, scss/style.scss */
 .wp-caption-text {
   text-align: center;
 }
 
-/* line 274, scss/style.scss */
+/* line 310, scss/style.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-/* line 277, scss/style.scss */
+/* line 313, scss/style.scss */
 .site-content .gallery {
   margin-bottom: 1.5em;
 }
 
-/* line 282, scss/style.scss */
+/* line 318, scss/style.scss */
 .site-content .gallery a img {
   border: none;
   height: auto;
   max-width: 90%;
 }
 
-/* line 287, scss/style.scss */
+/* line 323, scss/style.scss */
 .site-content .gallery dd {
   margin: 0;
 }
 
 /* Make sure embeds and iframes fit their containers */
-/* line 298, scss/style.scss */
+/* line 334, scss/style.scss */
 embed,
 iframe,
 object {
@@ -1049,19 +1111,19 @@ object {
 
 /* =Navigation
 ----------------------------------------------- */
-/* line 306, scss/style.scss */
+/* line 342, scss/style.scss */
 .site-content [class*="navigation"] {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
 
-/* line 310, scss/style.scss */
+/* line 346, scss/style.scss */
 [class*="navigation"] .previous {
   float: left;
   width: 50%;
 }
 
-/* line 314, scss/style.scss */
+/* line 350, scss/style.scss */
 [class*="navigation"] .next {
   float: right;
   text-align: right;
@@ -1070,26 +1132,26 @@ object {
 
 /* =Comments
 ----------------------------------------------- */
-/* line 323, scss/style.scss */
+/* line 359, scss/style.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
 /* =Widgets
 ----------------------------------------------- */
-/* line 332, scss/style.scss */
+/* line 368, scss/style.scss */
 .widget {
   margin: 0 0 1.5em;
 }
 
 /* Make sure select elements fit in widgets */
-/* line 337, scss/style.scss */
+/* line 373, scss/style.scss */
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget */
-/* line 342, scss/style.scss */
+/* line 378, scss/style.scss */
 .widget_search .submit {
   display: none;
 }
@@ -1097,7 +1159,7 @@ object {
 /* =Infinite Scroll
 ----------------------------------------------- */
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-/* line 351, scss/style.scss */
+/* line 387, scss/style.scss */
 .infinite-scroll .navigation-paging,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -1105,7 +1167,7 @@ object {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-/* line 356, scss/style.scss */
+/* line 392, scss/style.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
@@ -1113,28 +1175,28 @@ object {
 /* -------------------------------------------------- */
 /*	Contact Us
 /* -------------------------------------------------- */
-/* line 363, scss/style.scss */
+/* line 399, scss/style.scss */
 .wpcf7-form .input-block, #commentform .input-block {
   margin: 0 0 20px 0;
 }
 
-/* line 367, scss/style.scss */
+/* line 403, scss/style.scss */
 .wpcf7-form input, #commentform input,
 .wpcf7-form textarea, #commentform textarea {
   width: 278px;
 }
 
-/* line 369, scss/style.scss */
+/* line 405, scss/style.scss */
 input:hover, textarea:hover, select:hover, .input-block input:hover {
   border-color: #dedede;
 }
 
-/* line 370, scss/style.scss */
+/* line 406, scss/style.scss */
 input, select {
   height: 40px;
 }
 
-/* line 373, scss/style.scss */
+/* line 409, scss/style.scss */
 input, textarea, select, .input-block input {
   background-color: #F8F8F8;
   border: 1px solid #E8E8E8;
@@ -1148,7 +1210,7 @@ input, textarea, select, .input-block input {
 /* -------------------------------------------------- */
 /*	Pricing Tables
 /* -------------------------------------------------- */
-/* line 386, scss/style.scss */
+/* line 422, scss/style.scss */
 .pricing-table {
   height: 100%;
   margin: 20px 0;
@@ -1157,12 +1219,12 @@ input, textarea, select, .input-block input {
   width: 100%;
 }
 
-/* line 393, scss/style.scss */
+/* line 429, scss/style.scss */
 .pricing-table .features-list {
   display: none;
 }
 
-/* line 394, scss/style.scss */
+/* line 430, scss/style.scss */
 .pricing-table .features li:before {
   color: #7b7b7b;
   content: attr(data-feature) ":" !important;
@@ -1171,13 +1233,13 @@ input, textarea, select, .input-block input {
   text-align: center;
 }
 
-/* line 401, scss/style.scss */
+/* line 437, scss/style.scss */
 .pricing-table .features {
   list-style: none;
   margin: 0;
 }
 
-/* line 402, scss/style.scss */
+/* line 438, scss/style.scss */
 .pricing-table .header {
   background: #313131;
   color: #fff;
@@ -1186,7 +1248,7 @@ input, textarea, select, .input-block input {
   padding: 0;
 }
 
-/* line 409, scss/style.scss */
+/* line 445, scss/style.scss */
 .pricing-table .title {
   font-size: 1.1em;
   font-weight: 400;
@@ -1196,7 +1258,7 @@ input, textarea, select, .input-block input {
   background: #2c2c2c;
 }
 
-/* line 417, scss/style.scss */
+/* line 453, scss/style.scss */
 .pricing-table .price {
   color: #999;
   font-size: 12px;
@@ -1204,64 +1266,64 @@ input, textarea, select, .input-block input {
   padding: 7px 0 0 0;
 }
 
-/* line 423, scss/style.scss */
+/* line 459, scss/style.scss */
 .pricing-table .featured .price {
   color: #fff;
 }
 
-/* line 424, scss/style.scss */
+/* line 460, scss/style.scss */
 .pricing-table .price span {
   color: #fff;
   font-size: 30px;
   display: block;
 }
 
-/* line 429, scss/style.scss */
+/* line 465, scss/style.scss */
 .features-list .header {
   background: none !important;
   border: none;
 }
 
-/* line 431, scss/style.scss */
+/* line 467, scss/style.scss */
 .header {
   padding: 15px 20px 20px;
 }
 
-/* line 433, scss/style.scss */
+/* line 469, scss/style.scss */
 .pricing-table .features li {
   display: block;
   margin: 0;
   position: relative;
 }
 
-/* line 438, scss/style.scss */
+/* line 474, scss/style.scss */
 .pricing-table .footer {
   padding: 16px 20px;
   background: #f8f8f8;
 }
 
-/* line 439, scss/style.scss */
+/* line 475, scss/style.scss */
 .pricing-table .footer .button {
-  background: #515151;
+  background: #313131;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   padding: 9px 21px;
 }
 
-/* line 446, scss/style.scss */
+/* line 482, scss/style.scss */
 .pricing-table .features li {
   background: #f8f8f8;
   border-bottom: 1px solid #fff;
   padding: 8px 10px;
 }
 
-/* line 451, scss/style.scss */
+/* line 487, scss/style.scss */
 .pricing-table .featured {
   margin-top: 12px;
 }
 
-/* line 452, scss/style.scss */
+/* line 488, scss/style.scss */
 .pricing-table .featured .header {
   background: #69bd45;
   padding: 0 0 23px 0;
@@ -1270,55 +1332,55 @@ input, textarea, select, .input-block input {
 }
 
 @-moz-document url-prefix() {
-  /* line 459, scss/style.scss */
+  /* line 495, scss/style.scss */
   .pricing-table .featured .header {
     padding: 0 0 21px 0;
     /* Firefox Hack */
   }
 }
 
-/* line 463, scss/style.scss */
+/* line 499, scss/style.scss */
 .pricing-table .featured .header .title {
   font-size: 1.3em;
   background: #418937;
 }
 
-/* line 464, scss/style.scss */
+/* line 500, scss/style.scss */
 .pricing-table .features li:before {
   content: '';
 }
 
-/* line 465, scss/style.scss */
+/* line 501, scss/style.scss */
 .pricing-table .featured .features li {
   background: #fff;
 }
 
-/* line 466, scss/style.scss */
+/* line 502, scss/style.scss */
 .pricing-table .features li:first-child {
   border-top: 1px solid #fff;
 }
 
-/* line 467, scss/style.scss */
+/* line 503, scss/style.scss */
 .pricing-table .features li:nth-child(even) {
   background: #f0f0f0;
 }
 
-/* line 468, scss/style.scss */
+/* line 504, scss/style.scss */
 .pricing-table .featured .features li:nth-child(even) {
   background: #f6f6f6;
 }
 
-/* line 470, scss/style.scss */
+/* line 506, scss/style.scss */
 .pricing-table .featured .footer {
   padding-bottom: 26px;
 }
 
-/* line 471, scss/style.scss */
+/* line 507, scss/style.scss */
 .pricing-table .features-list .footer {
   background: none;
 }
 
-/* line 473, scss/style.scss */
+/* line 509, scss/style.scss */
 .pricing-table .footer .button {
   color: #fff;
   -webkit-transition: background-color .3s ease;
@@ -1328,12 +1390,12 @@ input, textarea, select, .input-block input {
   transition: background-color .3s ease;
 }
 
-/* line 480, scss/style.scss */
+/* line 516, scss/style.scss */
 .pricing-table .footer .button:hover {
   background: #69bd45;
 }
 
-/* line 482, scss/style.scss */
+/* line 518, scss/style.scss */
 .pricing-table .featured .footer .button {
   background: #69bd45;
   color: #313131;
@@ -1344,14 +1406,14 @@ input, textarea, select, .input-block input {
   transition: background-color .3s ease;
 }
 
-/* line 489, scss/style.scss */
+/* line 525, scss/style.scss */
 .pricing-table .featured .footer .button:hover {
   background: #313131;
   color: #fff;
 }
 
 /*Portfolio */
-/* line 495, scss/style.scss */
+/* line 531, scss/style.scss */
 .portfolio-grid {
   list-style: none;
   padding: 20px 0;
@@ -1360,7 +1422,7 @@ input, textarea, select, .input-block input {
   width: 100%;
 }
 
-/* line 502, scss/style.scss */
+/* line 538, scss/style.scss */
 .portfolio-grid li {
   display: inline-block;
   margin: 10px 10px 0 10px;
@@ -1376,7 +1438,7 @@ input, textarea, select, .input-block input {
   transition: background-color .3s ease;
 }
 
-/* line 517, scss/style.scss */
+/* line 553, scss/style.scss */
 .portfolio-grid li > a,
 .portfolio-grid li > a img {
   border: none;
@@ -1385,64 +1447,112 @@ input, textarea, select, .input-block input {
   position: relative;
 }
 
-/* line 523, scss/style.scss */
+/* line 559, scss/style.scss */
 .portfolio-grid li:hover {
+  background: #69bd45;
+}
+
+/* line 560, scss/style.scss */
+.portfolio-page h2 {
+  border-bottom: 2px solid #69bd45;
+  text-align: center;
+}
+
+/* line 561, scss/style.scss */
+.portfolio-page h3, .portfolio-page h4 {
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+/* line 567, scss/style.scss */
+.portfolio-image {
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/* line 568, scss/style.scss */
+.portfolio-image img {
+  border: 10px solid #313131;
+}
+
+/* line 569, scss/style.scss */
+.portfolio-details {
+  border-bottom: 2px solid #69bd45;
+}
+
+/* line 571, scss/style.scss */
+.web-link .button {
+  background: #313131;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 9px 21px;
+  color: #fff;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  -ms-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+/* line 584, scss/style.scss */
+.web-link .button:hover {
+  color: #fff;
   background: #69bd45;
 }
 
 /*============================================================ TABLET ==========================================*/
 @media only screen and (min-width: 767px) {
   /* Tablets/netbooks (768px+) styles go here */
-  /* line 540, scss/style.scss */
+  /* line 602, scss/style.scss */
   hgroup {
     float: left;
   }
 
-  /* line 543, scss/style.scss */
+  /* line 605, scss/style.scss */
   h1#logo a {
     margin: 10px 0;
   }
 
-  /* line 546, scss/style.scss */
+  /* line 608, scss/style.scss */
   .content {
-    padding-bottom: 150px;
+    padding-bottom: 170px;
+    margin: 0 auto;
   }
 
-  /* line 547, scss/style.scss */
+  /* line 609, scss/style.scss */
   .menu-toggle {
     width: 90%;
     display: none;
   }
 
   /* Responsive iFrame */
-  /* line 550, scss/style.scss */
+  /* line 612, scss/style.scss */
   .responsive-iframe-container {
     height: 300px;
   }
 
-  /* line 553, scss/style.scss */
-  .content {
-    margin: 20px auto;
-  }
-
   /* =Menu
   ----------------------------------------------- */
-  /* line 560, scss/style.scss */
+  /* line 619, scss/style.scss */
   .menu ul {
     border: none;
   }
 
-  /* line 561, scss/style.scss */
+  /* line 620, scss/style.scss */
   .menu ul li {
     border: none;
   }
 
-  /* line 562, scss/style.scss */
+  /* line 621, scss/style.scss */
   .menu ul li a {
     color: #313131;
   }
 
-  /* line 563, scss/style.scss */
+  /* line 622, scss/style.scss */
   nav {
     position: relative;
     line-height: 2em;
@@ -1450,14 +1560,14 @@ input, textarea, select, .input-block input {
     font-weight: 400;
   }
 
-  /* line 569, scss/style.scss */
+  /* line 628, scss/style.scss */
   .navigation-main {
     display: block;
     padding: 0 !important;
     margin: -6px auto !important;
   }
 
-  /* line 574, scss/style.scss */
+  /* line 633, scss/style.scss */
   .navigation-main ul {
     display: block;
     list-style: none;
@@ -1466,19 +1576,19 @@ input, textarea, select, .input-block input {
     height: 100px;
   }
 
-  /* line 581, scss/style.scss */
+  /* line 640, scss/style.scss */
   .navigation-main ul li {
     float: left;
     height: 100%;
     /*TRANSISTIONS*/
-    -webkit-transition: display 3s ease;
-    -moz-transition: display 3s ease;
-    -o-transition: display 3s ease;
-    -ms-transition: display 3s ease;
-    transition: display 3s ease;
+    -webkit-transition: display .3s ease;
+    -moz-transition: display .3s ease;
+    -o-transition: display .3s ease;
+    -ms-transition: display .3s ease;
+    transition: display .3s ease;
   }
 
-  /* line 591, scss/style.scss */
+  /* line 650, scss/style.scss */
   .navigation-main li a {
     float: left;
     color: #444;
@@ -1488,14 +1598,14 @@ input, textarea, select, .input-block input {
     text-decoration: none;
     text-transform: uppercase;
     /*TRANSISTIONS*/
-    -webkit-transition: background 3s ease;
-    -moz-transition: background 3s ease;
-    -o-transition: background 3s ease;
-    -ms-transition: background 3s ease;
-    transition: background 3s ease;
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
+    -o-transition: background .3s ease;
+    -ms-transition: background .3s ease;
+    transition: background .3s ease;
   }
 
-  /* line 607, scss/style.scss */
+  /* line 666, scss/style.scss */
   .navigation-main li.current_page_item a {
     background: #f8f8f8;
     border-top: 6px solid #69bd45;
@@ -1505,7 +1615,7 @@ input, textarea, select, .input-block input {
   }
 
   /*HOVER*/
-  /* line 615, scss/style.scss */
+  /* line 674, scss/style.scss */
   .navigation-main li a:hover {
     background: #f8f8f8;
     color: #222;
@@ -1516,13 +1626,13 @@ input, textarea, select, .input-block input {
   }
 
   /*VISITED*/
-  /* line 624, scss/style.scss */
+  /* line 683, scss/style.scss */
   .navigation-main li a:visited {
     /*color:#fff;*/
   }
 
   /* Dropdown */
-  /* line 629, scss/style.scss */
+  /* line 688, scss/style.scss */
   .navigation-main li:hover > ul {
     display: block;
     top: 100px;
@@ -1531,14 +1641,14 @@ input, textarea, select, .input-block input {
   }
 
   @-moz-document url-prefix() {
-    /* line 635, scss/style.scss */
+    /* line 694, scss/style.scss */
     .navigation-main li:hover > ul {
       top: 100px;
       /* Firefox Hack */
     }
 }
 
-  /* line 640, scss/style.scss */
+  /* line 699, scss/style.scss */
   .navigation-main ul ul {
     background: #313131;
     -webkit-box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.2);
@@ -1551,12 +1661,12 @@ input, textarea, select, .input-block input {
     z-index: 99;
   }
 
-  /* line 652, scss/style.scss */
+  /* line 711, scss/style.scss */
   .navigation-main ul ul li {
     float: none;
   }
 
-  /* line 654, scss/style.scss */
+  /* line 713, scss/style.scss */
   .navigation-main ul ul a {
     border: 0;
     border-bottom: 1px solid #252525;
@@ -1574,7 +1684,7 @@ input, textarea, select, .input-block input {
     min-width: 100%;
   }
 
-  /* line 675, scss/style.scss */
+  /* line 734, scss/style.scss */
   .navigation-main ul ul a:hover,
   .navigation-main ul ul .current_page_item > a,
   .navigation-main ul ul .current_page_parent > a,
@@ -1585,7 +1695,7 @@ input, textarea, select, .input-block input {
     padding-top: 3px !important;
   }
 
-  /* line 683, scss/style.scss */
+  /* line 742, scss/style.scss */
   .not-ie .navigation-main ul ul .current_page_item:after, .not-ie .navigation-main ul ul .current-menu-item:after,
   .not-ie .navigation-main ul ul .current_page_parent:after,
   .not-ie .navigation-main ul ul .current_page_ancestor:after, .not-ie .navigation-main ul ul .current-menu-ancestor:after {
@@ -1593,7 +1703,7 @@ input, textarea, select, .input-block input {
   }
 
   /* Sub Dropdown */
-  /* line 686, scss/style.scss */
+  /* line 745, scss/style.scss */
   .navigation-main ul ul ul {
     left: 158px !important;
     top: 46px !important;
@@ -1602,7 +1712,7 @@ input, textarea, select, .input-block input {
     line-height: 14px;
   }
 
-  /* line 694, scss/style.scss */
+  /* line 753, scss/style.scss */
   .sub-menu li a {
     border: 1px solid #222;
   }
@@ -1640,23 +1750,23 @@ input, textarea, select, .input-block input {
   }
   */
   /* Small menu */
-  /* line 735, scss/style.scss */
+  /* line 794, scss/style.scss */
   .menu-toggle {
     display: none;
     cursor: pointer;
   }
 
-  /* line 740, scss/style.scss */
+  /* line 799, scss/style.scss */
   .main-small-navigation ul {
     display: none;
   }
 
-  /* line 744, scss/style.scss */
+  /* line 803, scss/style.scss */
   .navigation-main small {
     display: none;
   }
 
-  /* line 748, scss/style.scss */
+  /* line 807, scss/style.scss */
   #service-box ul li {
     display: inline-block;
     width: 28%;
@@ -1664,19 +1774,19 @@ input, textarea, select, .input-block input {
   }
 
   /* Layout: Content-Sidebar */
-  /* line 757, scss/style.scss */
+  /* line 816, scss/style.scss */
   .content-area {
     float: left;
     margin: 0 -25% 0 0;
     width: 100%;
   }
 
-  /* line 762, scss/style.scss */
+  /* line 821, scss/style.scss */
   .site-content {
     margin: 0 25% 0 0;
   }
 
-  /* line 765, scss/style.scss */
+  /* line 824, scss/style.scss */
   .site-main .widget-area {
     float: right;
     overflow: hidden;
@@ -1686,60 +1796,60 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Contact Us
   /* -------------------------------------------------- */
-  /* line 774, scss/style.scss */
+  /* line 833, scss/style.scss */
   .wpcf7-form, #contact-info {
     margin: 0px;
   }
 
-  /* line 775, scss/style.scss */
+  /* line 834, scss/style.scss */
   .wpcf7-form, #commentform {
     max-width: 100%;
   }
 
-  /* line 776, scss/style.scss */
+  /* line 835, scss/style.scss */
   .wpcf7-form {
     margin: 0 -20px 0 0;
   }
 
-  /* line 777, scss/style.scss */
+  /* line 836, scss/style.scss */
   .wpcf7-form-control-wrap br, .wpcf7-form-control-wrap p {
     display: none;
   }
 
-  /* line 778, scss/style.scss */
+  /* line 837, scss/style.scss */
   .wpcf7-form .input-block, #commentform .input-block {
     float: left !important;
     margin: 0 15px 20px 0;
   }
 
-  /* line 782, scss/style.scss */
+  /* line 841, scss/style.scss */
   .wpcf7-form .input-block:nth-of-type(3n), #commentform .input-block:nth-of-type(3n) {
     margin-right: 0;
   }
 
-  /* line 783, scss/style.scss */
+  /* line 842, scss/style.scss */
   .wpcf7-form input {
     width: 157px;
   }
 
-  /* line 784, scss/style.scss */
+  /* line 843, scss/style.scss */
   .wpcf7-form .textarea-block, #commentform .textarea-block {
     clear: both;
   }
 
-  /* line 785, scss/style.scss */
+  /* line 844, scss/style.scss */
   .wpcf7-form textarea {
     width: 500px;
   }
 
-  /* line 786, scss/style.scss */
+  /* line 845, scss/style.scss */
   .wpcf7-not-valid-tip {
     color: #f02932;
     display: block;
     margin: 5px 0 0;
   }
 
-  /* line 792, scss/style.scss */
+  /* line 851, scss/style.scss */
   .wpcf7-form input[type="submit"], #commentform input[type="submit"],
   .wpcf7-form input[type="reset"], #commentform input[type="reset"] {
     display: block;
@@ -1747,7 +1857,7 @@ input, textarea, select, .input-block input {
     width: auto !important;
   }
 
-  /* line 797, scss/style.scss */
+  /* line 856, scss/style.scss */
   .wpcf7-response-output {
     margin: -20px 0 0;
   }
@@ -1755,28 +1865,28 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Pricing Tables
   /* -------------------------------------------------- */
-  /* line 803, scss/style.scss */
+  /* line 862, scss/style.scss */
   .pricing-table .featured .header {
     margin-top: -20px;
   }
 
-  /* line 804, scss/style.scss */
+  /* line 863, scss/style.scss */
   .pricing-table .features {
     border-left: 1px solid #fff;
   }
 
-  /* line 806, scss/style.scss */
+  /* line 865, scss/style.scss */
   .column {
     width: 25%;
   }
 
-  /* line 807, scss/style.scss */
+  /* line 866, scss/style.scss */
   .pricing-table .featured {
     border-left: 1px solid #f8f8f8;
     border-right: 1px solid #f8f8f8;
   }
 
-  /* line 809, scss/style.scss */
+  /* line 868, scss/style.scss */
   .features-list {
     text-align: left;
     font-size: .9em;
@@ -1784,47 +1894,51 @@ input, textarea, select, .input-block input {
     line-height: 1.5em;
   }
 
-  /* line 810, scss/style.scss */
+  /* line 869, scss/style.scss */
   .features-list li {
     padding-right: 0 !important;
   }
 
   /* Portfolio */
+  /* line 875, scss/style.scss */
+  .portfolio-image {
+    width: 60%;
+  }
 }
 /* End Tablet */
 /*============================================================ DESKTOP ==========================================*/
 @media only screen and (min-width: 1024px) {
   /* Desktops (1024px+) styles go here */
-  /* line 832, scss/style.scss */
+  /* line 891, scss/style.scss */
   hgroup {
     background: #fff;
   }
 
-  /* line 833, scss/style.scss */
+  /* line 892, scss/style.scss */
   nav {
     font-size: .9em;
     line-height: 2em;
   }
 
   /* Responsive iFrame */
-  /* line 836, scss/style.scss */
+  /* line 895, scss/style.scss */
   .responsive-iframe-container {
     height: 400px;
   }
 
-  /* line 838, scss/style.scss */
+  /* line 897, scss/style.scss */
   .navigation-main li a {
     padding: 38px 20px 12px;
   }
 
   /*dropdown*/
-  /* line 841, scss/style.scss */
+  /* line 900, scss/style.scss */
   .navigation-main ul ul a {
     background: #444;
     font-size: .8em;
   }
 
-  /* line 846, scss/style.scss */
+  /* line 905, scss/style.scss */
   .navigation-main small {
     display: block;
     font-size: .8em;
@@ -1835,7 +1949,7 @@ input, textarea, select, .input-block input {
     font-weight: 300;
   }
 
-  /* line 856, scss/style.scss */
+  /* line 915, scss/style.scss */
   #service-box ul li {
     display: inline-block;
     width: 29%;
@@ -1844,17 +1958,17 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Contact Us
   /* -------------------------------------------------- */
-  /* line 861, scss/style.scss */
+  /* line 920, scss/style.scss */
   .wpcf7-form .input-block, #commentform .input-block {
     margin: 0 20px 20px 0;
   }
 
-  /* line 864, scss/style.scss */
+  /* line 923, scss/style.scss */
   .wpcf7-form input {
     width: 213px !important;
   }
 
-  /* line 865, scss/style.scss */
+  /* line 924, scss/style.scss */
   .wpcf7-form textarea {
     height: 150px;
     max-width: 100%;
@@ -1864,22 +1978,22 @@ input, textarea, select, .input-block input {
   /* -------------------------------------------------- */
   /*	Pricing Tables
   /* -------------------------------------------------- */
-  /* line 874, scss/style.scss */
+  /* line 933, scss/style.scss */
   .pricing-table .features-list {
     display: block;
   }
 
-  /* line 875, scss/style.scss */
+  /* line 934, scss/style.scss */
   .pricing-table .features li:before {
     display: none;
   }
 
-  /* line 876, scss/style.scss */
+  /* line 935, scss/style.scss */
   .pricing-table .features-list .features {
     border-left: none;
   }
 
-  /* line 878, scss/style.scss */
+  /* line 937, scss/style.scss */
   .column {
     width: 20%;
   }

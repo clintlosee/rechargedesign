@@ -153,6 +153,10 @@ function recharge_design_scripts() {
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( 'Recharge Design-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
+
+	if ( is_page('WordPress Maintenance')) {
+		wp_enqueue_style ( 'Tooltips', get_template_directory_uri() . '/css/css-tooltips.css' );
+	}
 	
 	//wp_enqueue_script( 'Quicksand', get_template_directory_uri() . '/js/quicksand.js', 'jquery' );
 	//wp_enqueue_script( 'Custom', get_template_directory_uri() . '/js/custom.js', 'jquery', '1.0', true );

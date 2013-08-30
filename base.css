@@ -588,15 +588,21 @@ textarea {
 a {
   color: #313131;
   text-decoration: none;
+  /*TRANSISTIONS*/
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  transition: color .3s ease;
 }
 
-/* line 361, scss/base.scss */
+/* line 367, scss/base.scss */
 a:visited {
   color: #666;
   outline: none;
 }
 
-/* line 367, scss/base.scss */
+/* line 373, scss/base.scss */
 a:hover,
 a:focus,
 a:active {
@@ -604,21 +610,21 @@ a:active {
 }
 
 /* Alignment */
-/* line 372, scss/base.scss */
+/* line 378, scss/base.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
-/* line 377, scss/base.scss */
+/* line 383, scss/base.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
-/* line 382, scss/base.scss */
+/* line 388, scss/base.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -626,13 +632,13 @@ a:active {
 }
 
 /* Text meant only for screen readers */
-/* line 389, scss/base.scss */
+/* line 395, scss/base.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
 }
 
-/* line 396, scss/base.scss */
+/* line 402, scss/base.scss */
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
@@ -656,7 +662,7 @@ a:active {
 }
 
 /* Clearing */
-/* line 421, scss/base.scss */
+/* line 427, scss/base.scss */
 .clear:before,
 .clear:after,
 [class*="content"]:before,
@@ -667,7 +673,7 @@ a:active {
   display: table;
 }
 
-/* line 428, scss/base.scss */
+/* line 434, scss/base.scss */
 .clear:after,
 [class*="content"]:after,
 [class*="site"]:after {

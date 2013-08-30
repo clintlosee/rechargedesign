@@ -426,7 +426,13 @@ textarea {
 /* Links */
 a {
   color: #313131;
-  text-decoration: none; }
+  text-decoration: none;
+  /*TRANSISTIONS*/
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  transition: color .3s ease; }
 
 a:visited {
   color: #666;

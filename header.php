@@ -54,7 +54,7 @@
 		</div><!-- end grid-container -->
 	</header><!-- #masthead -->
 
-	<section>
+	<section><!-- Fix this so it only shows on front page and contact page -->
 
 		<?php 
 			if ( is_page('front-page')) {
@@ -71,5 +71,6 @@
 		?>
 
 	</section>
-
-	<div id="main" class="grid-container content site-main">
+<div class="content">
+	<div id="main" class="grid-container site-main">
+		<div id="primary" class="content-area">

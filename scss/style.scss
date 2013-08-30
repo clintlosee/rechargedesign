@@ -46,7 +46,6 @@ and Blueprint http://www.blueprintcss.org/
 body {
 	font-family: $fontFam;
 	font-weight: 300;
-	
 	color:#444;
 }
 header {
@@ -57,13 +56,14 @@ header {
 .content { padding-bottom:450px; }
 
 h1#logo a {
-	background: url("img/logonew.png") no-repeat;
+	background: url("img/rechargelogo.png") no-repeat;
 	width:230px;
 	height:73px;
 	margin:10px auto;
 	@include linkTextOffscreen();
 }
 
+/*********************** Footer **************************************/
 footer {
 	position:absolute;
 	bottom: 0;
@@ -78,13 +78,15 @@ footer {
 footer a { 
 	color:#868686;
 	/*TRANSISTIONS*/
-    -webkit-transition: color 3s ease;
-       -moz-transition: color 3s ease;
-         -o-transition: color 3s ease;
-        -ms-transition: color 3s ease;
-            transition: color 3s ease;
+    -webkit-transition: color .3s ease;
+       -moz-transition: color .3s ease;
+         -o-transition: color .3s ease;
+        -ms-transition: color .3s ease;
+            transition: color .3s ease;
 }
 footer a:hover { color:$mainGreen; }
+#footer-one, #footer-two, #footer-three { margin-top:20px; }
+
 .entry-meta {
 	background:none !important;
 	border:none !important;
@@ -115,11 +117,11 @@ footer a:hover { color:$mainGreen; }
 	cursor:pointer;
 	float:right;
 	/*TRANSISTIONS*/
-	    -webkit-transition: background 3s ease;
-	       -moz-transition: background 3s ease;
-	         -o-transition: background 3s ease;
-	        -ms-transition: background 3s ease;
-	            transition: background 3s ease;
+	    -webkit-transition: background .3s ease;
+	       -moz-transition: background .3s ease;
+	         -o-transition: background .3s ease;
+	        -ms-transition: background .3s ease;
+	            transition: background .3s ease;
 }
 .menu-toggle {
 	position:relative;
@@ -195,6 +197,7 @@ footer a:hover { color:$mainGreen; }
 	margin: 0 0 1.5em;
 }
 
+/*********************************** Front Page **************/
 #service-box, #work-box {
   /*border: 1px solid #222;*/
 }
@@ -215,6 +218,33 @@ footer a:hover { color:$mainGreen; }
 }
 #service-box h3 a span:hover { color:$mainGreen;}
 
+/********************************************* Services Page **********************/
+.services {
+	height:300px;
+	margin:0;
+}
+#service-one, #service-two, #service-three { padding:10px 0; }
+#service-one h3, #service-two h3, #service-three h3 { border-bottom:2px solid $mainGreen; }
+#webserviceimg {
+	background: url('img/ScreenMockup400x245.png') no-repeat;
+	width:400px;
+	height:245px;
+	margin-top:25px;
+}
+#webserviceinfo {
+	padding:20px;
+}
+#service-two {
+	background: $lightGrey;	
+}
+#service-three {
+	
+}
+
+.border { border:1px solid #333; }
+
+
+/***************************************** Contact Page ***************************/
 #contact {
 	padding:20px 0;
 	font-size:.8em;
@@ -233,6 +263,12 @@ footer a:hover { color:$mainGreen; }
 	font-size:5em;
 	line-height: 1.2em;
 	color:$mainGrey;
+}
+.entypoService {
+	font-size:14em !important;
+	line-height: 1.2em;
+	color:$mainGreen;
+	margin-left: 40px;
 }
 .entypoMenu { font-size: 1.2em; }
 .entypoPriceCancel { color:$mainGrey; }
@@ -437,7 +473,7 @@ input, textarea, select, .input-block input {
 }
 .pricing-table .footer { padding: 16px 20px; background:#f8f8f8; }
 .pricing-table .footer .button {
-	background: #515151;
+	background: $mainGrey;
 	font-size: 14px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -521,8 +557,34 @@ input, textarea, select, .input-block input {
 	position: relative;
 }
 .portfolio-grid li:hover { background: $mainGreen; }
+.portfolio-page h2 { border-bottom:2px solid $mainGreen; text-align: center; }
+.portfolio-page h3, .portfolio-page h4 { 
+	font-size: 1em; 
+	font-weight: 400; 
+	text-transform: uppercase; 
+	padding:10px 0;
+}
+.portfolio-image { width:100%; padding:10px; margin: 0 auto; }
+.portfolio-image img { border:10px solid $mainGrey; }
+.portfolio-details { border-bottom:2px solid $mainGreen; }
 
-
+.web-link .button {
+	background:$mainGrey;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 9px 21px;
+	color:#fff;
+	-webkit-transition: background-color .3s ease;
+	   -moz-transition: background-color .3s ease;
+		-ms-transition: background-color .3s ease;
+		 -o-transition: background-color .3s ease;
+			transition: background-color .3s ease;
+}
+.web-link .button:hover {
+	color:#fff;
+	background: $mainGreen
+}
 
 #footer-one, #footer-two { }
 
@@ -543,15 +605,12 @@ hgroup {
 h1#logo a {
 	margin:10px 0;
 }
-.content { padding-bottom:150px; }
+.content { padding-bottom:170px; margin:0 auto; }
 .menu-toggle { width:90%; display:none; }
 
 /* Responsive iFrame */
 .responsive-iframe-container {
 	height: 300px;
-}
-.content {
-	margin:20px auto;
 }
 
 
@@ -582,11 +641,11 @@ nav {
 	float:left;
 	height:100%;
 	/*TRANSISTIONS*/
-    -webkit-transition: display 3s ease;
-       -moz-transition: display 3s ease;
-         -o-transition: display 3s ease;
-        -ms-transition: display 3s ease;
-            transition: display 3s ease;
+    -webkit-transition: display .3s ease;
+       -moz-transition: display .3s ease;
+         -o-transition: display .3s ease;
+        -ms-transition: display .3s ease;
+            transition: display .3s ease;
 }
 .navigation-main li a {
 	float:left;
@@ -598,11 +657,11 @@ nav {
     text-transform: uppercase;
 	
 	/*TRANSISTIONS*/
-    -webkit-transition: background 3s ease;
-       -moz-transition: background 3s ease;
-         -o-transition: background 3s ease;
-        -ms-transition: background 3s ease;
-            transition: background 3s ease;
+    -webkit-transition: background .3s ease;
+       -moz-transition: background .3s ease;
+         -o-transition: background .3s ease;
+        -ms-transition: background .3s ease;
+            transition: background .3s ease;
 }
 .navigation-main li.current_page_item a { 
 		background: $lightGrey; 
@@ -813,7 +872,7 @@ nav ul li a {  }
 
 
 /* Portfolio */
-
+.portfolio-image { width:60%; }
 
 
 
