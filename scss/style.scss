@@ -24,7 +24,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.9.98
+Version: 1.9.98.1
 License: GNU General Public License
 License URI: license.txt
 Tags:
@@ -53,7 +53,7 @@ header {
 }
 .site-header { border-bottom:1px solid $borderColor; padding-right:0 !important; border-top:6px solid $mainGrey; }
 .site { min-height: 100%; position:relative;  }
-.content { padding-bottom:450px; }
+.content { padding-bottom:900px; }
 
 h1#logo a {
 	background: url("img/rechargelogo.png") no-repeat;
@@ -220,23 +220,22 @@ footer a:hover { color:$mainGreen; }
 
 /********************************************* Services Page **********************/
 .services {
-	height:300px;
-	margin:0;
+	min-height:300px;
+	margin:10px 0;
 }
 #service-one, #service-two, #service-three { padding:10px 0; }
 #service-one h3, #service-two h3, #service-three h3 { border-bottom:2px solid $mainGreen; }
 #webserviceimg {
-	background: url('img/ScreenMockup400x245.png') no-repeat;
-	width:400px;
-	height:245px;
-	margin-top:25px;
+	margin-top:0;
 }
+
 #webserviceinfo {
-	padding:20px;
+	padding:20px 0;
 }
 #service-two {
 	background: $lightGrey;	
 }
+#service-two span { border:1px solid #333;}
 #service-three {
 	
 }
@@ -605,7 +604,7 @@ hgroup {
 h1#logo a {
 	margin:10px 0;
 }
-.content { padding-bottom:170px; margin:0 auto; }
+.content { padding-bottom:700px; margin:0 auto; }
 .menu-toggle { width:90%; display:none; }
 
 /* Responsive iFrame */
@@ -664,11 +663,17 @@ nav {
             transition: background .3s ease;
 }
 .navigation-main li.current_page_item a { 
-		background: $lightGrey; 
-		border-top:6px solid $mainGreen; 
-		border-bottom: 1px solid $mainGreen; 
-		padding-top:32px; 
-		color:#444 !important;
+	background: $lightGrey; 
+	border-top:6px solid $mainGreen; 
+	border-bottom: 1px solid $mainGreen; 
+	padding-top:32px; 
+	color:#444 !important;
+}
+.navigation-main li.current_page_item li a { 
+	background: $mainGrey; 
+	border:none;
+	padding:0;
+
 }
 /*HOVER*/
 .navigation-main li a:hover {
@@ -710,7 +715,8 @@ nav {
 
 .navigation-main ul ul li { float: none; }
 
-.navigation-main ul ul a {
+/* Dropdown Styles */
+.navigation-main ul ul a, .navigation-main li.current_page_item li a {
 	border: 0;
 	border-bottom: 1px solid #252525;
 	border-top: 1px solid #4c4c4c;
@@ -735,6 +741,11 @@ nav {
 	background: $mainGreen;
 	color: #fff;
 	padding-top:3px !important;
+}
+.navigation-main li.current_page_item li a:hover {
+	background:$mainGreen;
+	padding-top:9px !important;
+	border:0;
 }
 
 .not-ie .navigation-main ul ul .current_page_item:after, .not-ie .navigation-main ul ul .current-menu-item:after,
@@ -810,6 +821,17 @@ nav ul li a {  }
 	margin:20px 2%;
 
 }
+
+
+/* Services *******************************/
+#webserviceimg {
+	margin-top:100px;
+}
+#webserviceinfo {
+	padding:20px 20px 0;
+}
+
+
 
 
 /* Layout: Content-Sidebar */
@@ -913,6 +935,18 @@ nav { font-size: .9em; line-height:2em; }
 }
 
 #service-box ul li { display: inline-block;	width:29%; }
+
+
+/* Services **************************************/
+#webserviceimg {
+	margin-top:50px;
+	/*padding:25px 50px;*/
+}
+
+
+
+
+
 
 /* -------------------------------------------------- */
 /*	Contact Us

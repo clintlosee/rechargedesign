@@ -22,11 +22,9 @@ get_header(); ?>
 			<section class="services" id="service-one">
 				
 				<div class="grid-container">
-					
 					<div class="grid-100 mobile-grid-100">	
-						
-						<div class="grid-60 alignleft">
-						<h3>Website Development</h3>
+						<div class="grid-60 mobile-grid-100">
+							<h3>Website Development</h3>
 							
 							<div class="" id="webserviceinfo">
 								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
@@ -38,22 +36,20 @@ get_header(); ?>
 							</div>
 						</div>
 							
-							<div id="webserviceimg" class="grid-30 alignright"></div>
-					
+						<div id="webserviceimg" class="grid-40 mobile-grid-100">
+							<img src="<?php bloginfo('template_url')?>/img/ScreenMockup500x306.png" />
+						</div>
 					</div>
+				</div> <!-- end grid-container -->
 
-				</div>
-
-			</section>
+			</section> <!-- end services service-one -->
 
 			<section class="services" id="service-two">
 				
 				<div class="grid-container">
 					
 					<div class="grid-100 mobile-grid-100">
-						<span class="entypo-tools entypoService grid-30"></span>
-
-						<div class="alignright grid-60">
+						<div class="grid-60 mobile-grid-100 push-40">
 							<h3 class="">WordPress Maintenance</h3>
 							
 							<div class="" id="webserviceinfo">
@@ -65,19 +61,24 @@ get_header(); ?>
 									sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 							</div>
 						</div>
+
+						<!--<span class="entypo-tools entypoService grid-40 image"></span>-->
+						<div id="webserviceimg" class="grid-40 mobile-grid-100 pull-60">
+							<img src="<?php bloginfo('template_url')?>/img/ScreenMockup500x306.png" />
+						</div>
 						
 					</div>
 
-				</div>
+				</div> <!-- end grid-container -->
 
-			</section>
+			</section> <!-- end services service-two -->
 
 			<section class="services" id="service-three">
 				<div class="grid-container">
 				    <div class="grid-100 mobile-grid-100">	
 						
-						<div class="grid-60 alignleft">
-						<h3>SEO Consulting</h3>
+						<div class="grid-60 mobile-grid-100">
+							<h3>SEO Consulting</h3>
 							
 							<div class="" id="webserviceinfo">
 								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
@@ -89,11 +90,14 @@ get_header(); ?>
 							</div>
 						</div>
 							
-							<span class="entypo-target entypoService grid-30"></span>
+						<!--<span class="entypo-target entypoService grid-30"></span>-->
+						<div id="webserviceimg" class="grid-40 mobile-grid-100">
+							<img src="<?php bloginfo('template_url')?>/img/ScreenMockup500x306.png" />
+						</div>
 					
 					</div>
-				</div>
-			</section>
+				</div> <!-- end grid-container -->
+			</section> <!-- end services service-three -->
 
 			<div class="grid-container site-main">
 
